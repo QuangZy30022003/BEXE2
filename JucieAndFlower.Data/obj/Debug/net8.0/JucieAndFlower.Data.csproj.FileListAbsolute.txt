@@ -1,0 +1,14 @@
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\bin\Debug\net8.0\JucieAndFlower.Data.deps.json
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\bin\Debug\net8.0\JucieAndFlower.Data.runtimeconfig.json
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\bin\Debug\net8.0\JucieAndFlower.Data.dll
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\bin\Debug\net8.0\JucieAndFlower.Data.pdb
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.csproj.AssemblyReference.cache
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.AssemblyInfoInputs.cache
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.AssemblyInfo.cs
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.csproj.CoreCompileInputs.cache
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.dll
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\refint\JucieAndFlower.Data.dll
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.pdb
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\JucieAndFlower.Data.genruntimeconfig.cache
+D:\myself\BE\JucieAndFlower\JucieAndFlower.Data\obj\Debug\net8.0\ref\JucieAndFlower.Data.dll
