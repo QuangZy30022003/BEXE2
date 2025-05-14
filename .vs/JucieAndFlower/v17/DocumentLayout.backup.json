@@ -1,0 +1,750 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\workshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\workshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\workshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\workshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\worshop\\workshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\worshop\\workshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\workshopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\workshopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\iworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\iworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\workshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\workshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\iworkshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\iworkshoprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\productdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\productdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\productdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\productdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\iproductdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\iproductdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\productdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\productdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\iproductdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\iproductdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\productdetails\\productdetailcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\productdetails\\productdetailcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\productdetails\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\productdetails\\productdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\categories\\categorynoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\categories\\categorynoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\login\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\login\\tokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\product\\productcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\product\\productcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IWorkshopRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IWorkshopRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IWorkshopRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IWorkshopRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IWorkshopRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:07:46.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkshopDTO.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Worshop\\WorkshopDTO.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Worshop\\WorkshopDTO.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Worshop\\WorkshopDTO.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Worshop\\WorkshopDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:07:24.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\DependencyInjection.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\DependencyInjection.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:06:44.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\DependencyInjection.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\DependencyInjection.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:07:17.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Workshop.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Workshop.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\Workshop.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Workshop.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\Workshop.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:04:28.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkshopService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\WorkshopService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\WorkshopService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\WorkshopService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\WorkshopService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwCUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:09:23.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkshopRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\WorkshopRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\WorkshopRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\WorkshopRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\WorkshopRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBMAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:08:07.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WorkshopController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\WorkshopController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\WorkshopController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\WorkshopController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\WorkshopController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:10:03.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IWorkshopService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IWorkshopService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IWorkshopService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IWorkshopService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IWorkshopService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T07:09:09.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductDetailController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductDetailController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\ProductDetailController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductDetailController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\ProductDetailController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:59:44.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductDetailService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductDetailService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\ProductDetailService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductDetailService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\ProductDetailService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:58:47.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IProductDetailService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductDetailService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IProductDetailService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductDetailService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IProductDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:58:11.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductDetailRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductDetailRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ProductDetailRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductDetailRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\ProductDetailRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:57:36.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProductDetailRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductDetailRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IProductDetailRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductDetailRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IProductDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:57:14.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductDetailCreateDTO.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailCreateDTO.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailCreateDTO.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailCreateDTO.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:56:39.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductDetailDTO.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailDTO.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailDTO.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailDTO.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\ProductDetails\\ProductDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:56:23.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductDetail.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ProductDetail.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\ProductDetail.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ProductDetail.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\ProductDetail.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:53:39.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Categories\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Categories\\CategoryDTO.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Categories\\CategoryDTO.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Categories\\CategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:53:55.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAewDUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:34:13.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:28:32.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoryNoID.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Categories\\CategoryNoID.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Categories\\CategoryNoID.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Categories\\CategoryNoID.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Categories\\CategoryNoID.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:10:01.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\CategoryService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\CategoryService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\CategoryService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\CategoryService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwD8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:59:02.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\ICategoryService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\ICategoryService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\ICategoryService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwA4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:58:49.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IProductService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:22:39.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:21:48.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:40:31.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\ProductService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\ProductService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwFEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:23:14.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\appsettings.json",
+              "RelativeDocumentMoniker": "JucieAndFlower\\appsettings.json",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\appsettings.json",
+              "RelativeToolTip": "JucieAndFlower\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-14T04:50:56.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\UserService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\UserService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\UserService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwHQAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T04:00:54.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:22:08.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Program.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Program.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Program.cs",
+              "RelativeToolTip": "JucieAndFlower\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAlwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:01:09.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IUserService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IUserService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T04:09:26.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TokenModel.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Login\\TokenModel.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Login\\TokenModel.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Login\\TokenModel.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Login\\TokenModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T04:14:23.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:58:12.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:00:10.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductCreateUpdateDto.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:59:19.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:54:37.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\Category.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Category.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:51:44.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IProductRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:21:25.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\Product.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Product.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\Product.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:02:15.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T16:22:10.595Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1161,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

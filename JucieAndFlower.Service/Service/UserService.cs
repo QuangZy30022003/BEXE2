@@ -20,9 +20,9 @@ namespace JucieAndFlower.Service.Service
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
 
-        public UserService (IUserRepository userRepository, IConfiguration configuration)
+        public UserService(IUserRepository userRepository, IConfiguration configuration)
         {
-            _userRepository = userRepository;   
+            _userRepository = userRepository;
             _configuration = configuration;
         }
         public async Task<string> RegisterAsync(UserRegisterDto dto)
@@ -59,10 +59,10 @@ namespace JucieAndFlower.Service.Service
             // Tạo JWT Token
             var claims = new[]
             {
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.RoleId.ToString())
-    };
+            new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+            new Claim(ClaimTypes.Email, user.Email),
+            new Claim(ClaimTypes.Role, user.RoleId.ToString())
+        };
 
             var jwtKey = _configuration["JwtSettings:Key"];
             if (string.IsNullOrEmpty(jwtKey))
@@ -113,5 +113,84 @@ namespace JucieAndFlower.Service.Service
             }
             return Convert.ToBase64String(randomNumber);
         }
+
+        public async Task<object?> RefreshTokenAsync(string accessToken, string refreshToken)
+        {
+            var principal = GetPrincipalFromExpiredToken(accessToken);
+            if (principal == null)
+                return null;
+
+            var email = principal.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email))
+                return null;
+
+            var user = await _userRepository.GetByEmailAsync(email);
+            if (user == null || user.RefreshToken != refreshToken || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+                return null;
+
+            // Tạo mới access token
+            var claims = new[]
+            {
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(ClaimTypes.Email, user.Email),
+        new Claim(ClaimTypes.Role, user.RoleId.ToString())
+    };
+
+            var jwtKey = _configuration["JwtSettings:Key"];
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["JwtSettings:Issuer"],
+                audience: _configuration["JwtSettings:Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["JwtSettings:ExpiresInMinutes"])),
+                signingCredentials: creds
+            );
+
+            var newAccessToken = new JwtSecurityTokenHandler().WriteToken(token);
+            var newRefreshToken = GenerateRefreshToken();
+
+            user.RefreshToken = newRefreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userRepository.SaveAsync();
+
+            return new
+            {
+                Token = newAccessToken,
+                RefreshToken = newRefreshToken
+            };
+        }
+        private ClaimsPrincipal? GetPrincipalFromExpiredToken(string token)
+        {
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateIssuerSigningKey = true,
+                ValidateLifetime = false, // ❗ Cho phép token hết hạn
+
+                ValidIssuer = _configuration["JwtSettings:Issuer"],
+                ValidAudience = _configuration["JwtSettings:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]))
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            try
+            {
+                var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken securityToken);
+                if (securityToken is not JwtSecurityToken jwtSecurityToken ||
+                    !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    return null;
+                }
+                return principal;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
     }
 }

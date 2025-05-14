@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mQovx5UxNDM=",
+  "dgSpecHash": "614rKN9Jwgs=",
   "success": true,
-  "projectFilePath": "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower\\JucieAndFlower.csproj",
+  "projectFilePath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\JucieAndFlower.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

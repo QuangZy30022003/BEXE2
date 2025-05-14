@@ -13,6 +13,10 @@ namespace JucieAndFlower.Data
         public static IServiceCollection AddRepository(this IServiceCollection service)
         {
             service.AddScoped<IUserRepository, UserRepository>();
+            service.AddScoped<IProductRepository, ProductRepository>();
+            service.AddScoped<ICategoryRepository, CategoryRepository>();
+            service.AddScoped<IProductDetailRepository, ProductDetailRepository>();
+            service.AddScoped<IWorkshopRepository, WorkshopRepository>();
             return service;
         }
     }

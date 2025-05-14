@@ -14,5 +14,7 @@ namespace JucieAndFlower.Service.Interface
         Task<object?> LoginAsync(string email, string password);
 
         Task<bool> LogoutAsync(string email);
+
+        Task<object?> RefreshTokenAsync(string accessToken, string refreshToken);
     }
 }

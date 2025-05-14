@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj": {}
+    "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj": {}
   },
   "projects": {
-    "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj": {
+    "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj",
+        "projectUniqueName": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj",
         "projectName": "JucieAndFlower.Data",
-        "projectPath": "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj",
+        "projectPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\JucieAndFlower.Data.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "D:\\myself\\BE\\JucieAndFlower\\JucieAndFlower.Data\\obj\\",
+        "outputPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

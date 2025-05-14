@@ -54,5 +54,16 @@ namespace JucieAndFlower.Controllers
             return Ok("Logged out successfully.");
         }
 
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> Refresh([FromBody] TokenModel model)
+        {
+            var result = await _userService.RefreshTokenAsync(model.AccessToken!, model.RefreshToken!);
+            if (result == null)
+                return Unauthorized("Invalid token.");
+
+            return Ok(result);
+        }
+
+
     }
 }
