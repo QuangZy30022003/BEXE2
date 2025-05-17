@@ -137,6 +137,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JucieAndFlower.Controllers.OrdersController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.Order.OrderCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.OrdersController",
+    "Method": "GetOrderById",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.OrdersController",
+    "Method": "PaymentReturn",
+    "RelativePath": "api/Orders/payment-return",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JucieAndFlower.Controllers.ProductDetailController",
     "Method": "GetAll",
     "RelativePath": "api/ProductDetail",
@@ -361,6 +403,85 @@
     "ContainingType": "JucieAndFlower.Controllers.WorkshopController",
     "Method": "Delete",
     "RelativePath": "api/Workshop/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.WorkshopTicketController",
+    "Method": "GetAll",
+    "RelativePath": "api/WorkshopTicket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.WorkshopTicketController",
+    "Method": "Create",
+    "RelativePath": "api/WorkshopTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.Worshop.WorkshopTicketDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.WorkshopTicketController",
+    "Method": "Get",
+    "RelativePath": "api/WorkshopTicket/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.WorkshopTicketController",
+    "Method": "Update",
+    "RelativePath": "api/WorkshopTicket/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.Worshop.WorkshopTicketDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.WorkshopTicketController",
+    "Method": "Delete",
+    "RelativePath": "api/WorkshopTicket/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -1,4 +1,5 @@
 ﻿using JucieAndFlower.Data;
+using JucieAndFlower.Data.Enities.VnPay;
 using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service;
 using Microsoft.EntityFrameworkCore;
@@ -31,7 +32,12 @@ builder.Services.AddAuthentication("Bearer")
 builder.Services.AddAuthorization();
 
 // Đăng ký các dịch vụ khác
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+    {
+        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        x.JsonSerializerOptions.WriteIndented = true;
+    });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -65,6 +71,13 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+builder.Services.Configure<VnPayConfig>(builder.Configuration.GetSection("VnPayConfig"));
+builder.Services.AddSingleton(sp =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    return config.GetSection("VnPayConfig").Get<VnPayConfig>();
+});
+
 builder.Services
              .AddRepository()
              .AddServices();
