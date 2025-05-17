@@ -19,6 +19,9 @@ namespace JucieAndFlower.Service
             service.AddScoped<ICategoryService, CategoryService>();
             service.AddScoped<IProductDetailService, ProductDetailService>();
             service.AddScoped<IWorkshopService, WorkshopService>();
+            service.AddScoped<IWorkshopTicketService, WorkshopTicketService>();
+            service.AddScoped<IOrderService, OrderService>();
+            service.AddScoped<IVNPayService, VNPayService>();
             return service;
         }
     }
