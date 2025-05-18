@@ -85,12 +85,12 @@ builder.Services
 var app = builder.Build();
 
 // Cấu hình Middleware
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
+    app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "JuiceAndFlower.API v1");
+});
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
