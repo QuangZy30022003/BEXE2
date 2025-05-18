@@ -1,6 +1,7 @@
-﻿using JucieAndFlower.Data.Enities;
-using JucieAndFlower.Data.Enities.Login;
+﻿using JucieAndFlower.Data.Enities.Login;
+using JucieAndFlower.Data.Enities.User;
 using JucieAndFlower.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -62,6 +63,36 @@ namespace JucieAndFlower.Controllers
                 return Unauthorized("Invalid token.");
 
             return Ok(result);
+        }
+
+        [Authorize]
+        [HttpPut("update-profile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UserUpdateDto dto)
+        {
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("Invalid token.");
+
+            var result = await _userService.UpdateUserProfileAsync(email, dto);
+            if (!result.IsSuccess)
+                return BadRequest(result.Message);
+
+            return Ok("Update successful.");
+        }
+
+        [Authorize]
+        [HttpGet("profile")]
+        public async Task<IActionResult> GetProfile()
+        {
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("Invalid token.");
+
+            var profile = await _userService.GetUserProfileAsync(email);
+            if (profile == null)
+                return NotFound("User not found.");
+
+            return Ok(profile);
         }
 
 

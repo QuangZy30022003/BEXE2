@@ -1,4 +1,5 @@
-﻿using JucieAndFlower.Data.Enities;
+﻿using JucieAndFlower.Data.Enities.User;
+using JucieAndFlower.Data.Enities.User.JucieAndFlower.Data.Enities.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,10 @@ namespace JucieAndFlower.Service.Interface
         Task<bool> LogoutAsync(string email);
 
         Task<object?> RefreshTokenAsync(string accessToken, string refreshToken);
+
+        Task<(bool IsSuccess, string Message)> UpdateUserProfileAsync(string email, UserUpdateDto dto);
+
+        Task<UserProfileDto?> GetUserProfileAsync(string email);
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using JucieAndFlower.Data.Enities;
+﻿using JucieAndFlower.Data.Enities.User;
+using JucieAndFlower.Data.Enities.User.JucieAndFlower.Data.Enities.User;
 using JucieAndFlower.Data.Models;
 using JucieAndFlower.Data.Repositories;
 using JucieAndFlower.Service.Interface;
@@ -191,6 +192,62 @@ namespace JucieAndFlower.Service.Service
                 return null;
             }
         }
+
+        public async Task<(bool IsSuccess, string Message)> UpdateUserProfileAsync(string email, UserUpdateDto dto)
+        {
+            var user = await _userRepository.GetByEmailAsync(email);
+            if (user == null)
+                return (false, "User not found.");
+
+            // Cập nhật thông tin cá nhân
+            user.FullName = dto.FullName;
+            user.Phone = dto.Phone;
+            user.Address = dto.Address;
+            user.Gender = dto.Gender;
+            user.BirthDate = dto.BirthDate;
+
+            // Nếu có ý định đổi mật khẩu
+            if (!string.IsNullOrWhiteSpace(dto.OldPassword) ||
+                !string.IsNullOrWhiteSpace(dto.NewPassword) ||
+                !string.IsNullOrWhiteSpace(dto.ConfirmPassword))
+            {
+                if (string.IsNullOrWhiteSpace(dto.OldPassword) ||
+                    string.IsNullOrWhiteSpace(dto.NewPassword) ||
+                    string.IsNullOrWhiteSpace(dto.ConfirmPassword))
+                {
+                    return (false, "Please fill all password fields.");
+                }
+
+                if (!BCrypt.Net.BCrypt.Verify(dto.OldPassword, user.PasswordHash))
+                    return (false, "Old password is incorrect.");
+
+                if (dto.NewPassword != dto.ConfirmPassword)
+                    return (false, "New password and confirmation do not match.");
+
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
+            }
+
+            await _userRepository.SaveAsync();
+            return (true, "Update successful.");
+        }
+
+        public async Task<UserProfileDto?> GetUserProfileAsync(string email)
+        {
+            var user = await _userRepository.GetByEmailAsync(email);
+            if (user == null) return null;
+
+            return new UserProfileDto
+            {
+                FullName = user.FullName,
+                Email = user.Email,
+                Phone = user.Phone,
+                Address = user.Address,
+                Gender = user.Gender,
+                BirthDate = user.BirthDate,
+                RoleId = user.RoleId
+            };
+        }
+
 
     }
 }

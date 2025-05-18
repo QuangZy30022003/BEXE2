@@ -27,6 +27,16 @@
   },
   {
     "ContainingType": "JucieAndFlower.Controllers.AuthController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Auth/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.AuthController",
     "Method": "Refresh",
     "RelativePath": "api/Auth/refresh-token",
     "HttpMethod": "POST",
@@ -51,7 +61,23 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "JucieAndFlower.Data.Enities.UserRegisterDto",
+        "Type": "JucieAndFlower.Data.Enities.User.UserRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.AuthController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Auth/update-profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.User.UserUpdateDto",
         "IsRequired": true
       }
     ],

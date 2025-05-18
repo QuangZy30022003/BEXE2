@@ -12,5 +12,7 @@ namespace JucieAndFlower.Data.Repositories
         Task<User?> GetByEmailAsync(string email);
         Task AddUserAsync(User user);
         Task SaveAsync();
+        Task<User?> GetByIdAsync(int id);
+
     }
 }

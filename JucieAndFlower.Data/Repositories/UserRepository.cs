@@ -32,5 +32,11 @@ namespace JucieAndFlower.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<User?> GetByIdAsync(int id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
+
     }
 }
