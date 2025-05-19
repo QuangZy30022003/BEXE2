@@ -13,10 +13,11 @@ namespace JucieAndFlower.Service.Service
     public class OrderService : IOrderService
     {
         private readonly IOrderRepository _orderRepository;
-
-        public OrderService(IOrderRepository orderRepository)
+        private readonly ICartRepository _cartRepository;
+        public OrderService(IOrderRepository orderRepository, ICartRepository cartRepository)
         {
             _orderRepository = orderRepository;
+            _cartRepository = cartRepository;
         }
 
         public async Task<Order> CreateOrderAsync(OrderCreateDTO dto)
@@ -69,6 +70,47 @@ namespace JucieAndFlower.Service.Service
                  await _orderRepository.SaveChangesAsync();
             }
         }
+
+        public async Task<Order> CreateOrderFromCartAsync(OrderFromCartDTO dto)
+        {
+            var cartItems = await _cartRepository.GetCartItemsByIdsAsync(dto.SelectedCartItemIds);
+
+            if (cartItems == null || !cartItems.Any())
+                throw new Exception("Không tìm thấy sản phẩm trong giỏ hàng.");
+
+            decimal total = (decimal)cartItems.Sum(c => c.Quantity * c.Product.Price);
+            decimal discount = 0;
+
+            // Xử lý mã giảm giá nếu có
+            if (!string.IsNullOrEmpty(dto.PromotionCode))
+            {
+                // TODO: Xử lý logic mã giảm giá
+            }
+
+            var order = new Order
+            {
+                OrderDate = DateTime.Now,
+                TotalAmount = total,
+                DiscountAmount = discount,
+                FinalAmount = total - discount,
+                DeliveryAddress = dto.DeliveryAddress,
+                PromotionCode = dto.PromotionCode,
+                Note = dto.Note,
+                Status = "Pending",
+                OrderDetails = cartItems.Select(item => new OrderDetail
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    UnitPrice = item.Product.Price,
+                }).ToList()
+            };
+
+            // Xóa các cart item đã đặt hàng
+            await _cartRepository.DeleteRangeAsync(cartItems);
+
+            return await _orderRepository.AddAsync(order);
+        }
+
 
     }
 

@@ -62,7 +62,9 @@ namespace JucieAndFlower.Service.Service
             {
             new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
             new Claim(ClaimTypes.Email, user.Email),
-            new Claim(ClaimTypes.Role, user.RoleId.ToString())
+            new Claim(ClaimTypes.Role, user.RoleId.ToString()),
+                    new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
+
         };
 
             var jwtKey = _configuration["JwtSettings:Key"];
@@ -134,7 +136,9 @@ namespace JucieAndFlower.Service.Service
             {
         new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
         new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.RoleId.ToString())
+        new Claim(ClaimTypes.Role, user.RoleId.ToString()),
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
+
     };
 
             var jwtKey = _configuration["JwtSettings:Key"];

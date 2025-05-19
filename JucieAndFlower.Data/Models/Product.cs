@@ -43,4 +43,7 @@ public partial class Product
 
     [InverseProperty("Product")]
     public virtual ICollection<ProductDetail> ProductDetails { get; set; } = new List<ProductDetail>();
+
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+
 }

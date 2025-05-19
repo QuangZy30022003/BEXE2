@@ -40,10 +40,11 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<Workshop> Workshops { get; set; }
 
     public virtual DbSet<WorkshopTicket> WorkshopTickets { get; set; }
+    public virtual DbSet<CartItem> CartItems { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("Server=DESKTOP-IQK16CS\\QUANGZY;Database=Exe202;User ID=sa;Password=12345;TrustServerCertificate=True;");
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("Server=DESKTOP-IQK16CS\\QUANGZY;Database=Exe202;User ID=sa;Password=12345;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -166,6 +167,28 @@ public partial class ApplicationDbContext : DbContext
 
             entity.HasOne(d => d.Workshop).WithMany(p => p.WorkshopTickets).HasConstraintName("FK__WorkshopT__Works__5FB337D6");
         });
+
+        modelBuilder.Entity<CartItem>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_CartItems");
+
+            entity.Property(e => e.Quantity)
+                  .IsRequired()
+                  .HasDefaultValue(1);
+
+            entity.HasOne(d => d.User)
+                  .WithMany(p => p.CartItems)
+                  .HasForeignKey(d => d.UserId)
+                  .OnDelete(DeleteBehavior.Cascade)
+                  .HasConstraintName("FK_CartItems_Users");
+
+            entity.HasOne(d => d.Product)
+                  .WithMany(p => p.CartItems)
+                  .HasForeignKey(d => d.ProductId)
+                  .OnDelete(DeleteBehavior.Cascade)
+                  .HasConstraintName("FK_CartItems_Products");
+        });
+
 
         OnModelCreatingPartial(modelBuilder);
     }

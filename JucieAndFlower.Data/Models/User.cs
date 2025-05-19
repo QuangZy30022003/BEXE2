@@ -56,4 +56,6 @@ public partial class User
 
     [InverseProperty("User")]
     public virtual ICollection<UserWorkshopTicket> UserWorkshopTickets { get; set; } = new List<UserWorkshopTicket>();
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+
 }
