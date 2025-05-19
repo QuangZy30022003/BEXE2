@@ -1,6 +1,7 @@
 ﻿using JucieAndFlower.Data.Enities.Order;
 using JucieAndFlower.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace JucieAndFlower.Controllers
 {
@@ -17,23 +18,24 @@ namespace JucieAndFlower.Controllers
             _vnpayService = vnpayService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateOrder([FromBody] OrderCreateDTO dto)
-        {
-            var order = await _orderService.CreateOrderAsync(dto);
-            decimal totalAmount = (decimal)order.TotalAmount;
-            var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
+        //[HttpPost]
+        //public async Task<IActionResult> CreateOrder([FromBody] OrderCreateDTO dto)
+        //{
+        //    var order = await _orderService.CreateOrderAsync(dto);
+        //    decimal totalAmount = (decimal)order.TotalAmount;
+        //    var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
 
-            return Ok(new
-            {
-                order.OrderId,
-                PaymentUrl = paymentUrl
-            });
-        }
+        //    return Ok(new
+        //    {
+        //        order.OrderId,
+        //        PaymentUrl = paymentUrl
+        //    });
+        //}
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> GetOrderById(int id)
         {
+            int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("User ID claim not found"));
             var order = await _orderService.GetOrderByIdAsync(id);
             if (order == null) return NotFound();
             return Ok(order);
@@ -53,6 +55,22 @@ namespace JucieAndFlower.Controllers
 
             return BadRequest(new { Success = false, OrderId = response.OrderId });
         }
+
+        [HttpPost("from-cart")]
+        public async Task<IActionResult> CreateOrderFromCart([FromBody] OrderFromCartDTO dto)
+        {
+            int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("User ID claim not found"));
+            var order = await _orderService.CreateOrderFromCartAsync(dto);
+            decimal totalAmount = (decimal)order.TotalAmount;
+            var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
+
+            return Ok(new
+            {
+                order.OrderId,
+                PaymentUrl = paymentUrl
+            });
+        }
+
 
     }
 }

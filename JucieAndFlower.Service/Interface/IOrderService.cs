@@ -14,6 +14,8 @@ namespace JucieAndFlower.Service.Interface
         Task<Order?> GetOrderByIdAsync(int id);
 
         Task MarkOrderAsCompleteAsync(int orderId);
+
+        Task<Order> CreateOrderFromCartAsync(OrderFromCartDTO dto);
     }
 
 }

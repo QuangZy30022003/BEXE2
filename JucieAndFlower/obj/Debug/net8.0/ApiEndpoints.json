@@ -84,6 +84,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JucieAndFlower.Controllers.CartController",
+    "Method": "GetCart",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.CartController",
+    "Method": "AddOrUpdateCartItem",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.Cart.CartItemCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.CartController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Cart/{productId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JucieAndFlower.Controllers.CategoryController",
     "Method": "GetAll",
     "RelativePath": "api/Category",
@@ -164,24 +206,8 @@
   },
   {
     "ContainingType": "JucieAndFlower.Controllers.OrdersController",
-    "Method": "CreateOrder",
-    "RelativePath": "api/Orders",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "JucieAndFlower.Data.Enities.Order.OrderCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "JucieAndFlower.Controllers.OrdersController",
     "Method": "GetOrderById",
-    "RelativePath": "api/Orders/{id}",
+    "RelativePath": "api/Orders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -189,6 +215,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.OrdersController",
+    "Method": "CreateOrderFromCart",
+    "RelativePath": "api/Orders/from-cart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "JucieAndFlower.Data.Enities.Order.OrderFromCartDTO",
         "IsRequired": true
       }
     ],
