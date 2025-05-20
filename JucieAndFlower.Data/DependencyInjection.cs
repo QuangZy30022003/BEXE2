@@ -20,6 +20,7 @@ namespace JucieAndFlower.Data
             service.AddScoped<IWorkshopTicketRepository, WorkshopTicketRepository>();
             service.AddScoped<IOrderRepository, OrderRepository>();
             service.AddScoped<ICartRepository, CartRepository>();
+            service.AddScoped<IPaymentRepository, PaymentRepository>();
             return service;
         }
     }

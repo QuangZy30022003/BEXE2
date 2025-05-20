@@ -407,6 +407,18 @@
         }
       }
     },
+    "/api/Payment": {
+      "get": {
+        "tags": [
+          "Payment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ProductDetail": {
       "get": {
         "tags": [

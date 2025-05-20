@@ -67,10 +67,19 @@ namespace JucieAndFlower.Service.Service
             if (order != null && order.Status == "Pending")
             {
                 order.Status = "Complete";
-                 await _orderRepository.SaveChangesAsync();
+                await _orderRepository.SaveChangesAsync();
             }
         }
 
+        public async Task MarkOrderAsCanceledAsync(int orderId)
+        {
+            var order = await _orderRepository.GetByIdAsync(orderId);
+            if (order != null && order.Status == "Pending")
+            {
+                order.Status = "Cancel";
+                await _orderRepository.SaveChangesAsync();
+            }
+        }
         public async Task<Order> CreateOrderFromCartAsync(OrderFromCartDTO dto)
         {
             var cartItems = await _cartRepository.GetCartItemsByIdsAsync(dto.SelectedCartItemIds);
@@ -89,6 +98,7 @@ namespace JucieAndFlower.Service.Service
 
             var order = new Order
             {
+                UserId = dto.UserId ?? throw new Exception("UserId is missing"),
                 OrderDate = DateTime.Now,
                 TotalAmount = total,
                 DiscountAmount = discount,
@@ -105,11 +115,27 @@ namespace JucieAndFlower.Service.Service
                 }).ToList()
             };
 
-            // Xóa các cart item đã đặt hàng
-            await _cartRepository.DeleteRangeAsync(cartItems);
-
             return await _orderRepository.AddAsync(order);
         }
+
+        public async Task AutoCancelExpiredPendingOrdersAsync()
+        {
+            var allPendingOrders = await _orderRepository.GetPendingOrdersAsync(); // cần thêm hàm này
+            var expiredOrders = allPendingOrders
+      .Where(o => o.OrderDate.HasValue && (DateTime.Now - o.OrderDate.Value).TotalMinutes > 15)
+      .ToList();
+
+            foreach (var order in expiredOrders)
+            {
+                order.Status = "Cancel";
+            }
+
+            if (expiredOrders.Any())
+            {
+                await _orderRepository.SaveChangesAsync();
+            }
+        }
+
 
 
     }

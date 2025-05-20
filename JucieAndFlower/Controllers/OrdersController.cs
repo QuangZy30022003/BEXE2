@@ -1,4 +1,5 @@
 ﻿using JucieAndFlower.Data.Enities.Order;
+using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -11,11 +12,12 @@ namespace JucieAndFlower.Controllers
     {
         private readonly IOrderService _orderService;
         private readonly IVNPayService _vnpayService;
-
-        public OrdersController(IOrderService orderService, IVNPayService vnpayService)
+        private readonly IPaymentService _paymentService;
+        public OrdersController(IOrderService orderService, IVNPayService vnpayService, IPaymentService paymentService)
         {
             _orderService = orderService;
             _vnpayService = vnpayService;
+            _paymentService = paymentService;
         }
 
         //[HttpPost]
@@ -46,20 +48,61 @@ namespace JucieAndFlower.Controllers
         public async Task<IActionResult> PaymentReturn()
         {
             var response = _vnpayService.GetReturnData(Request.Query);
+            Console.WriteLine("VNPay Response OrderId: " + response.OrderId);
 
-            if (response.Success)
+            // Lấy thông tin đơn hàng
+            var order = await _orderService.GetOrderByIdAsync(response.OrderId);
+            if (order == null)
             {
-                await _orderService.MarkOrderAsCompleteAsync(response.OrderId);
-                return Ok(new { Success = true, OrderId = response.OrderId });
+                return NotFound(new { Success = false, Message = "Order not found." });
             }
 
-            return BadRequest(new { Success = false, OrderId = response.OrderId });
+            // Tạo bản ghi thanh toán
+            var payment = new Payment
+            {
+                OrderId = order.OrderId,
+                PaymentMethod = "VNPay",
+                PaidAmount = order.FinalAmount,
+                PaymentDate = DateTime.Now,
+                Status = response.Success ? "Paid" : "Cancel"
+            };
+
+            await _paymentService.AddPaymentAsync(payment);
+            if (!response.Success)
+            {
+                await _orderService.MarkOrderAsCanceledAsync(order.OrderId);
+            }
+            // Nếu thành công, cập nhật trạng thái đơn hàng
+            if (response.Success)
+            {
+                await _orderService.MarkOrderAsCompleteAsync(order.OrderId);
+
+                return Ok(new
+                {
+                    Success = true,
+                    Message = "Payment successful",
+                    OrderId = order.OrderId
+                });
+            }
+
+            // Nếu thất bại, chỉ trả kết quả
+            return BadRequest(new
+            {
+                Success = false,
+                Message = "Payment failed or canceled",
+                OrderId = order.OrderId
+            });
+
+        
+
         }
+
 
         [HttpPost("from-cart")]
         public async Task<IActionResult> CreateOrderFromCart([FromBody] OrderFromCartDTO dto)
         {
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("User ID claim not found"));
+            dto.UserId = userId;
             var order = await _orderService.CreateOrderFromCartAsync(dto);
             decimal totalAmount = (decimal)order.TotalAmount;
             var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);

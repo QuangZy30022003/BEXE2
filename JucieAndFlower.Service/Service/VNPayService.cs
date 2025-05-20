@@ -26,7 +26,7 @@ namespace JucieAndFlower.Service.Service
             var vnpay = new VnPayLibrary();
 
             string createDate = DateTime.Now.ToString("yyyyMMddHHmmss");
-            string txnRef = $"{orderId}{createDate}"; // Không có ký tự đặc biệt
+            string txnRef = $"{orderId}-{createDate}"; // Không có ký tự đặc biệt
 
             vnpay.AddRequestData("vnp_Version", _vnPayConfig.Version);
             vnpay.AddRequestData("vnp_Command", _vnPayConfig.Command);
