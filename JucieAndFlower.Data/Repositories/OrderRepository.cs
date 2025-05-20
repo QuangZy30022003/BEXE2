@@ -35,6 +35,14 @@ namespace JucieAndFlower.Data.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<Order>> GetPendingOrdersAsync()
+        {
+            return await _context.Orders
+                .Where(o => o.Status == "Pending")
+                .ToListAsync();
+        }
+
     }
 
 }

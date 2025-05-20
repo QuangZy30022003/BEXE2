@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace JucieAndFlower.Data.Repositories
 {
-    public interface IOrderRepository
+    public interface IPaymentRepository
     {
-        Task<Order> AddAsync(Order order);
-        Task<Order?> GetByIdAsync(int id);
-
+        Task AddPaymentAsync(Payment payment);
         Task SaveChangesAsync();
-
-        Task<List<Order>> GetPendingOrdersAsync();
-
+        Task<List<Payment>> GetAllAsync();
+        Task<List<Payment>> GetByUserIdAsync(int userId);
     }
+
 }

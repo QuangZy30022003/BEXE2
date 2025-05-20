@@ -16,6 +16,10 @@ namespace JucieAndFlower.Service.Interface
         Task MarkOrderAsCompleteAsync(int orderId);
 
         Task<Order> CreateOrderFromCartAsync(OrderFromCartDTO dto);
+
+        Task MarkOrderAsCanceledAsync(int orderId);
+
+        Task AutoCancelExpiredPendingOrdersAsync();
     }
 
 }
