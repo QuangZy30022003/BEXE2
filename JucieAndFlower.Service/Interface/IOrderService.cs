@@ -10,7 +10,6 @@ namespace JucieAndFlower.Service.Interface
 {
     public interface IOrderService
     {
-        Task<Order> CreateOrderAsync(OrderCreateDTO dto);
         Task<Order?> GetOrderByIdAsync(int id);
 
         Task MarkOrderAsCompleteAsync(int orderId);

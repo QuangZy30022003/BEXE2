@@ -14,47 +14,12 @@ namespace JucieAndFlower.Service.Service
     {
         private readonly IOrderRepository _orderRepository;
         private readonly ICartRepository _cartRepository;
-        public OrderService(IOrderRepository orderRepository, ICartRepository cartRepository)
+        private readonly IPromotionService _promotionService;
+        public OrderService(IOrderRepository orderRepository, ICartRepository cartRepository, IPromotionService promotionService)
         {
             _orderRepository = orderRepository;
             _cartRepository = cartRepository;
-        }
-
-        public async Task<Order> CreateOrderAsync(OrderCreateDTO dto)
-        {
-            decimal total = dto.OrderDetails.Sum(d => d.Quantity * d.UnitPrice);
-            decimal discount = 0;
-
-            // (Tùy chọn) kiểm tra mã giảm giá nếu có logic áp dụng
-            if (!string.IsNullOrEmpty(dto.PromotionCode))
-            {
-                // Logic xử lý mã khuyến mãi
-                // discount = ...;
-            }
-
-            var final = total - discount;
-
-            var order = new Order
-            {
-                UserId = dto.UserId,
-                OrderDate = DateTime.Now,
-                TotalAmount = total,
-                DiscountAmount = discount,
-                FinalAmount = final,
-                DeliveryAddress = dto.DeliveryAddress,
-                PromotionCode = dto.PromotionCode,
-                Note = dto.Note,
-                Status = "Pending",
-                OrderDetails = dto.OrderDetails.Select(d => new OrderDetail
-                {
-                    ProductId = d.ProductId,
-                    ProductDetailId = d.ProductDetailId,
-                    Quantity = d.Quantity,
-                    UnitPrice = d.UnitPrice
-                }).ToList()
-            };
-
-            return await _orderRepository.AddAsync(order);
+            _promotionService = promotionService;
         }
 
         public async Task<Order?> GetOrderByIdAsync(int id)
@@ -93,8 +58,15 @@ namespace JucieAndFlower.Service.Service
             // Xử lý mã giảm giá nếu có
             if (!string.IsNullOrEmpty(dto.PromotionCode))
             {
-                // TODO: Xử lý logic mã giảm giá
+                var promotion = await _promotionService.GetValidPromotionByCodeAsync(dto.PromotionCode);
+                if (promotion != null)
+                {
+                    discount = (total * (promotion.DiscountPercent ?? 0) / 100);
+                    if (promotion.MaxDiscount.HasValue)
+                        discount = Math.Min(discount, promotion.MaxDiscount.Value);
+                }
             }
+
 
             var order = new Order
             {
@@ -135,8 +107,6 @@ namespace JucieAndFlower.Service.Service
                 await _orderRepository.SaveChangesAsync();
             }
         }
-
-
 
     }
 
