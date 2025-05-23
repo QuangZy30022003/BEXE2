@@ -20,19 +20,6 @@ namespace JucieAndFlower.Controllers
             _paymentService = paymentService;
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> CreateOrder([FromBody] OrderCreateDTO dto)
-        //{
-        //    var order = await _orderService.CreateOrderAsync(dto);
-        //    decimal totalAmount = (decimal)order.TotalAmount;
-        //    var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
-
-        //    return Ok(new
-        //    {
-        //        order.OrderId,
-        //        PaymentUrl = paymentUrl
-        //    });
-        //}
 
         [HttpGet]
         public async Task<IActionResult> GetOrderById(int id)
@@ -104,7 +91,7 @@ namespace JucieAndFlower.Controllers
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("User ID claim not found"));
             dto.UserId = userId;
             var order = await _orderService.CreateOrderFromCartAsync(dto);
-            decimal totalAmount = (decimal)order.TotalAmount;
+            decimal totalAmount = (decimal)order.FinalAmount;
             var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
 
             return Ok(new
