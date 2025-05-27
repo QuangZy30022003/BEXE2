@@ -141,6 +141,9 @@ public partial class ApplicationDbContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Users__RoleId__3C69FB99");
+            entity.Property(e => e.RefreshToken).HasMaxLength(500);
+            entity.Property(e => e.EmailConfirmationToken).HasMaxLength(1000);
+
         });
 
         modelBuilder.Entity<UserWorkshopTicket>(entity =>

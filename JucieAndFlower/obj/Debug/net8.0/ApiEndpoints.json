@@ -84,6 +84,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JucieAndFlower.Controllers.AuthController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/Auth/verify-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JucieAndFlower.Controllers.CartController",
     "Method": "GetCart",
     "RelativePath": "api/Cart",

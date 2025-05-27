@@ -22,5 +22,7 @@ namespace JucieAndFlower.Service.Interface
 
         Task<UserProfileDto?> GetUserProfileAsync(string email);
 
+        Task<bool> VerifyEmailAsync(string email, string token);
+
     }
 }
