@@ -44,6 +44,10 @@ public partial class User
     [Column(TypeName = "datetime")]
     public DateTime? RefreshTokenExpiryTime { get; set; }
 
+    public bool IsEmailConfirmed { get; set; } = false;
+    public string? EmailConfirmationToken { get; set; }
+
+
     [InverseProperty("User")]
     public virtual ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
 

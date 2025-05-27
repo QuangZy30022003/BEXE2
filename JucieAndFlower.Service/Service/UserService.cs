@@ -20,18 +20,20 @@ namespace JucieAndFlower.Service.Service
     {
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
+        private readonly IEmailService _emailService;
 
-        public UserService(IUserRepository userRepository, IConfiguration configuration)
+        public UserService(IUserRepository userRepository, IConfiguration configuration, IEmailService emailService)
         {
             _userRepository = userRepository;
             _configuration = configuration;
+            _emailService = emailService;
         }
         public async Task<string> RegisterAsync(UserRegisterDto dto)
         {
             var existingUser = await _userRepository.GetByEmailAsync(dto.Email);
             if (existingUser != null)
                 return "Email already exists.";
-
+            var emailToken = Guid.NewGuid().ToString();
             var user = new User
             {
                 FullName = dto.FullName,
@@ -42,13 +44,17 @@ namespace JucieAndFlower.Service.Service
                 Gender = dto.Gender,
                 BirthDate = dto.BirthDate,
                 RoleId = 1, // Default: 1 = customer
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                 IsEmailConfirmed = false,
+                EmailConfirmationToken = emailToken
             };
-
             await _userRepository.AddUserAsync(user);
             await _userRepository.SaveAsync();
 
-            return "User registered successfully.";
+            var confirmLink = $"{_configuration["AppSettings:ApiBaseUrl"]}/api/auth/verify-email?email={user.Email}&token={emailToken}";
+            await _emailService.SendEmailAsync(user.Email, "Xác thực Email", $"<p>Nhấp vào <a href='{confirmLink}'>đây</a> để xác thực email.</p>");
+
+            return "Vui lòng kiểm tra email để xác nhận tài khoản.";
         }
 
         public async Task<object?> LoginAsync(string email, string password)
@@ -56,6 +62,11 @@ namespace JucieAndFlower.Service.Service
             var user = await _userRepository.GetByEmailAsync(email);
             if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
                 return null;
+
+            if (!user.IsEmailConfirmed)
+            {
+                return new { error = "Vui lòng xác nhận email trước khi đăng nhập." };
+            }
 
             // Tạo JWT Token
             var claims = new[]
@@ -137,8 +148,6 @@ namespace JucieAndFlower.Service.Service
         new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
         new Claim(ClaimTypes.Email, user.Email),
         new Claim(ClaimTypes.Role, user.RoleId.ToString()),
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
-
     };
 
             var jwtKey = _configuration["JwtSettings:Key"];
@@ -251,7 +260,30 @@ namespace JucieAndFlower.Service.Service
                 RoleId = user.RoleId
             };
         }
+        public async Task<bool> VerifyEmailAsync(string email, string token)
+        {
+            var user = await _userRepository.GetByEmailAsync(email);
+            if (user == null)
+            {
+                // Debug log user not found
+                return false;
+            }
+            if (string.IsNullOrEmpty(user.EmailConfirmationToken))
+            {
+                // Token đã được xác nhận hoặc chưa được cấp
+                return false;
+            }
+            if (user.EmailConfirmationToken != token)
+            {
+                // Debug log token không khớp
+                return false;
+            }
 
+            user.IsEmailConfirmed = true;
+            user.EmailConfirmationToken = null;
+            await _userRepository.SaveAsync();
+            return true;
+        }
 
     }
 }

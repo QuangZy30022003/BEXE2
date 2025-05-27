@@ -22,7 +22,7 @@ namespace JucieAndFlower.Controllers
         public async Task<IActionResult> Register([FromBody] UserRegisterDto dto)
         {
             var result = await _userService.RegisterAsync(dto);
-            if (result == "User registered successfully.")
+            if (result == "Vui lòng kiểm tra email để xác nhận tài khoản.")
                 return Ok(new { message = result });
 
             return BadRequest(new { error = result });
@@ -37,8 +37,12 @@ namespace JucieAndFlower.Controllers
             {
                 return Unauthorized(new { message = "Invalid email or password" });
             }
+            if (token is not null && token.GetType().GetProperty("error") != null)
+            {
+                return BadRequest(token);
+            }
 
-            return Ok(new { token });
+            return Ok(token); ;
         }
 
         [HttpPost("logout")]
@@ -95,6 +99,15 @@ namespace JucieAndFlower.Controllers
             return Ok(profile);
         }
 
+        [HttpGet("verify-email")]
+        public async Task<IActionResult> VerifyEmail(string email, string token)
+        {
+            var result = await _userService.VerifyEmailAsync(email, token);
+            if (!result)
+                return BadRequest("Invalid token or email");
+
+            return Ok("Email verified successfully");
+        }
 
     }
 }
