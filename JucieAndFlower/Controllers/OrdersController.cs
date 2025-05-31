@@ -1,6 +1,7 @@
 ﻿using JucieAndFlower.Data.Enities.Order;
 using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service.Interface;
+using JucieAndFlower.Service.Service;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -13,11 +14,13 @@ namespace JucieAndFlower.Controllers
         private readonly IOrderService _orderService;
         private readonly IVNPayService _vnpayService;
         private readonly IPaymentService _paymentService;
-        public OrdersController(IOrderService orderService, IVNPayService vnpayService, IPaymentService paymentService)
+        private readonly IEmailService _emailService;
+        public OrdersController(IOrderService orderService, IVNPayService vnpayService, IPaymentService paymentService, IEmailService emailService)
         {
             _orderService = orderService;
             _vnpayService = vnpayService;
             _paymentService = paymentService;
+            _emailService = emailService;
         }
 
 
@@ -79,11 +82,7 @@ namespace JucieAndFlower.Controllers
                 Message = "Payment failed or canceled",
                 OrderId = order.OrderId
             });
-
-        
-
         }
-
 
         [HttpPost("from-cart")]
         public async Task<IActionResult> CreateOrderFromCart([FromBody] OrderFromCartDTO dto)
@@ -94,6 +93,8 @@ namespace JucieAndFlower.Controllers
             decimal totalAmount = (decimal)order.FinalAmount;
             var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
 
+            string email = User.FindFirst(ClaimTypes.Email)?.Value ?? "default@example.com";
+            await _emailService.SendOrderInvoiceEmailAsync(email, order);
             return Ok(new
             {
                 order.OrderId,
