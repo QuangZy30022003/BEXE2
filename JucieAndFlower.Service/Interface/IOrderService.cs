@@ -10,7 +10,7 @@ namespace JucieAndFlower.Service.Interface
 {
     public interface IOrderService
     {
-        Task<Order?> GetOrderByIdAsync(int id);
+        Task<OrderDto?> GetOrderByIdAsync(int id);
 
         Task MarkOrderAsCompleteAsync(int orderId);
 
@@ -19,6 +19,8 @@ namespace JucieAndFlower.Service.Interface
         Task MarkOrderAsCanceledAsync(int orderId);
 
         Task AutoCancelExpiredPendingOrdersAsync();
+
+        Task<List<OrderResponseDTO>> GetOrdersByUserIdAsync(int userId);
     }
 
 }

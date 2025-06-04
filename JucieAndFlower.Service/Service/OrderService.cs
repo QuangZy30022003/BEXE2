@@ -22,9 +22,71 @@ namespace JucieAndFlower.Service.Service
             _promotionService = promotionService;
         }
 
-        public async Task<Order?> GetOrderByIdAsync(int id)
+        public async Task<OrderDto?> GetOrderByIdAsync(int id)
         {
-            return await _orderRepository.GetByIdAsync(id);
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null) return null;
+
+            return new OrderDto
+            {
+                OrderId = order.OrderId,
+                UserId = (int)order.UserId,
+                OrderDate =(DateTime)order.OrderDate,
+                TotalAmount = (Decimal)order.TotalAmount,
+                DiscountAmount = (Decimal)order.DiscountAmount,
+                FinalAmount = (Decimal)order.FinalAmount,
+                Status = order.Status,
+                Note = order.Note,
+                DeliveryAddress = order.DeliveryAddress,
+                PromotionCode = order.PromotionCode,
+                OrderDetails = order.OrderDetails.Select(od => new OrderDetailDto
+                {
+                    OrderDetailId = od.OrderDetailId,
+                    ProductId = (int)od.ProductId,
+                    ProductDetailId = od.ProductDetailId,
+                    Quantity = (int)od.Quantity,
+                    UnitPrice = (Decimal)od.UnitPrice
+                }).ToList()
+            };
+        }
+
+
+        public async Task<List<OrderResponseDTO>> GetOrdersByUserIdAsync(int userId)
+        {
+            var orders = await _orderRepository.GetOrdersByUserIdAsync(userId);
+            return orders.Select(order => new OrderResponseDTO
+            {
+                OrderId = order.OrderId,
+                UserId = order.UserId,
+                OrderDate = order.OrderDate,
+                TotalAmount = order.TotalAmount,
+                DiscountAmount = order.DiscountAmount,
+                FinalAmount = order.FinalAmount,
+                Status = order.Status,
+                Note = order.Note,
+                DeliveryAddress = order.DeliveryAddress,
+                PromotionCode = order.PromotionCode,
+                OrderDetails = order.OrderDetails?.Select(od => new OrderDetailResponseDTO
+                {
+                    OrderDetailId = od.OrderDetailId,
+                    OrderId = od.OrderId,
+                    ProductId = od.ProductId,
+                    ProductDetailId = od.ProductDetailId,
+                    Quantity = od.Quantity,
+                    UnitPrice = od.UnitPrice,
+                    Product = od.Product != null ? new ProductResponseDTO
+                    {
+                        ProductId = od.Product.ProductId,
+                        Name = od.Product.Name,
+                        Description = od.Product.Description,
+                        Price = od.Product.Price,
+                        ImageUrl = od.Product.ImageUrl,
+                        CategoryId = od.Product.CategoryId,
+                        IsAvailable = od.Product.IsAvailable,
+                        CreatedAt = od.Product.CreatedAt
+                    } : null
+                }).ToList() ?? new List<OrderDetailResponseDTO>()
+            }).ToList();
         }
         public async Task MarkOrderAsCompleteAsync(int orderId)
         {

@@ -66,8 +66,8 @@ namespace JucieAndFlower.Service.Service
             body.AppendLine($"<p><strong>Mã đơn hàng:</strong> #{order.OrderId}</p>");
             body.AppendLine($"<p><strong>Ngày đặt:</strong> {order.OrderDate:dd/MM/yyyy HH:mm}</p>");
             body.AppendLine($"<p><strong>Tổng tiền:</strong> {string.Format(vietnamCulture, "{0:C0}", order.TotalAmount)}</p>");
-            body.AppendLine($"<p><strong>Tổng tiền:</strong> {string.Format(vietnamCulture, "{0:C0}", order.DiscountAmount)}</p>");
-            body.AppendLine($"<p><strong>Tổng tiền:</strong> {string.Format(vietnamCulture, "{0:C0}", order.FinalAmount)}</p>");
+            body.AppendLine($"<p><strong>Giảm giá:</strong> {string.Format(vietnamCulture, "{0:C0}", order.DiscountAmount)}</p>");
+            body.AppendLine($"<p><strong>Thành Tiền:</strong> {string.Format(vietnamCulture, "{0:C0}", order.FinalAmount)}</p>");
             body.AppendLine("</div>");
 
             body.AppendLine("<h4 style='margin-top:20px;'>Chi tiết sản phẩm:</h4>");

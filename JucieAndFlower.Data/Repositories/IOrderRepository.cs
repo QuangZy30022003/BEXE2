@@ -16,5 +16,6 @@ namespace JucieAndFlower.Data.Repositories
 
         Task<List<Order>> GetPendingOrdersAsync();
 
+        Task<List<Order>> GetOrdersByUserIdAsync(int userId);   
     }
 }

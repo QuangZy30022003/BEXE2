@@ -27,6 +27,7 @@ namespace JucieAndFlower.Service
             service.AddScoped<IPromotionService, PromotionService>();
             service.AddScoped<IEmailService, EmailService>();
             service.AddScoped<IFeedbackService, FeedbackService>();
+            service.AddScoped<IRevenueService, RevenueService>();
             return service;
         }
     }
