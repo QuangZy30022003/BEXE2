@@ -32,7 +32,7 @@ namespace JucieAndFlower.Controllers
         }
 
 
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "2,4")]
         [HttpPost]
         public async Task<IActionResult> Create(ProductCreateUpdateDto product)
         {
@@ -41,7 +41,7 @@ namespace JucieAndFlower.Controllers
         }
 
 
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "2,4")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, ProductCreateUpdateDto product)
         {
@@ -49,7 +49,7 @@ namespace JucieAndFlower.Controllers
             if (!result) return NotFound();
             return Ok();
         }
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "2,4")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

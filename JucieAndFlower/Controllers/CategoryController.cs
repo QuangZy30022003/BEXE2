@@ -16,7 +16,6 @@ namespace JucieAndFlower.Controllers
             _service = service;
         }
 
-        // GET: api/Category
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -24,7 +23,6 @@ namespace JucieAndFlower.Controllers
             return Ok(result);
         }
 
-        // GET: api/Category/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -33,9 +31,8 @@ namespace JucieAndFlower.Controllers
             return Ok(category);
         }
 
-        // POST: api/Category
         [HttpPost]
-        [Authorize(Roles = "2")] // RoleId = 2
+        [Authorize(Roles = "2,4")]
         public async Task<IActionResult> Create(CategoryNoID dto)
         {
             var created = await _service.AddAsync(new CategoryNoID
@@ -45,10 +42,8 @@ namespace JucieAndFlower.Controllers
             });
             return Ok(created);
         }
-
-        // PUT: api/Category/5
         [HttpPut("{id}")]
-        [Authorize(Roles = "2")] // RoleId = 2
+        [Authorize(Roles = "2,4")]
         public async Task<IActionResult> Update(int id, [FromBody] CategoryNoID dto)
         {
             var updated = await _service.UpdateAsync(id, dto);
@@ -58,9 +53,8 @@ namespace JucieAndFlower.Controllers
             return Ok(updated);
         }
 
-        // DELETE: api/Category/5
         [HttpDelete("{id}")]
-        [Authorize(Roles = "2")] // RoleId = 2
+        [Authorize(Roles = "2,4")]
         public async Task<IActionResult> Delete(int id)
         {
             var deleted = await _service.DeleteAsync(id);

@@ -47,8 +47,11 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
     {
-        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        //x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        //x.JsonSerializerOptions.WriteIndented = true;
+
         x.JsonSerializerOptions.WriteIndented = true;
+        x.JsonSerializerOptions.PropertyNamingPolicy = null;
     });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
