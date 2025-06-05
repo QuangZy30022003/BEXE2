@@ -1348,11 +1348,11 @@
       "CartItemCreateDTO": {
         "type": "object",
         "properties": {
-          "productId": {
+          "ProductId": {
             "type": "integer",
             "format": "int32"
           },
-          "quantity": {
+          "Quantity": {
             "type": "integer",
             "format": "int32"
           }
@@ -1362,11 +1362,11 @@
       "CategoryNoID": {
         "type": "object",
         "properties": {
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "Description": {
             "type": "string",
             "nullable": true
           }
@@ -1376,23 +1376,23 @@
       "FeedbackCreateDto": {
         "type": "object",
         "properties": {
-          "productId": {
+          "ProductId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "workshopId": {
+          "WorkshopId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "rating": {
+          "Rating": {
             "maximum": 5,
             "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
-          "comment": {
+          "Comment": {
             "maxLength": 1000,
             "minLength": 0,
             "type": "string",
@@ -1404,13 +1404,13 @@
       "FeedbackUpdateDto": {
         "type": "object",
         "properties": {
-          "rating": {
+          "Rating": {
             "maximum": 5,
             "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
-          "comment": {
+          "Comment": {
             "maxLength": 1000,
             "minLength": 0,
             "type": "string",
@@ -1422,11 +1422,11 @@
       "LoginRequest": {
         "type": "object",
         "properties": {
-          "email": {
+          "Email": {
             "type": "string",
             "nullable": true
           },
-          "password": {
+          "Password": {
             "type": "string",
             "nullable": true
           }
@@ -1436,19 +1436,19 @@
       "OrderFromCartDTO": {
         "type": "object",
         "properties": {
-          "deliveryAddress": {
+          "DeliveryAddress": {
             "type": "string",
             "nullable": true
           },
-          "promotionCode": {
+          "PromotionCode": {
             "type": "string",
             "nullable": true
           },
-          "note": {
+          "Note": {
             "type": "string",
             "nullable": true
           },
-          "selectedCartItemIds": {
+          "SelectedCartItemIds": {
             "type": "array",
             "items": {
               "type": "integer",
@@ -1462,27 +1462,27 @@
       "ProductCreateUpdateDto": {
         "type": "object",
         "properties": {
-          "name": {
+          "Name": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "Description": {
             "type": "string",
             "nullable": true
           },
-          "price": {
+          "Price": {
             "type": "number",
             "format": "double"
           },
-          "imageUrl": {
+          "ImageUrl": {
             "type": "string",
             "nullable": true
           },
-          "categoryId": {
+          "CategoryId": {
             "type": "integer",
             "format": "int32"
           },
-          "isAvailable": {
+          "IsAvailable": {
             "type": "boolean"
           }
         },
@@ -1491,24 +1491,24 @@
       "ProductDetailCreateDTO": {
         "type": "object",
         "properties": {
-          "productId": {
+          "ProductId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "size": {
+          "Size": {
             "type": "string",
             "nullable": true
           },
-          "color": {
+          "Color": {
             "type": "string",
             "nullable": true
           },
-          "flowerType": {
+          "FlowerType": {
             "type": "string",
             "nullable": true
           },
-          "extraPrice": {
+          "ExtraPrice": {
             "type": "number",
             "format": "double",
             "nullable": true
@@ -1519,35 +1519,35 @@
       "PromotionCreateUpdateDTO": {
         "type": "object",
         "properties": {
-          "code": {
+          "Code": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "Description": {
             "type": "string",
             "nullable": true
           },
-          "discountPercent": {
+          "DiscountPercent": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "maxDiscount": {
+          "MaxDiscount": {
             "type": "number",
             "format": "double",
             "nullable": true
           },
-          "startDate": {
+          "StartDate": {
             "type": "string",
             "format": "date",
             "nullable": true
           },
-          "endDate": {
+          "EndDate": {
             "type": "string",
             "format": "date",
             "nullable": true
           },
-          "isActive": {
+          "IsActive": {
             "type": "boolean",
             "nullable": true
           }
@@ -1557,11 +1557,11 @@
       "TokenModel": {
         "type": "object",
         "properties": {
-          "accessToken": {
+          "AccessToken": {
             "type": "string",
             "nullable": true
           },
-          "refreshToken": {
+          "RefreshToken": {
             "type": "string",
             "nullable": true
           }
@@ -1571,31 +1571,31 @@
       "UserRegisterDto": {
         "type": "object",
         "properties": {
-          "fullName": {
+          "FullName": {
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "Email": {
             "type": "string",
             "nullable": true
           },
-          "password": {
+          "Password": {
             "type": "string",
             "nullable": true
           },
-          "phone": {
+          "Phone": {
             "type": "string",
             "nullable": true
           },
-          "address": {
+          "Address": {
             "type": "string",
             "nullable": true
           },
-          "gender": {
+          "Gender": {
             "type": "string",
             "nullable": true
           },
-          "birthDate": {
+          "BirthDate": {
             "type": "string",
             "format": "date",
             "nullable": true
@@ -1606,36 +1606,36 @@
       "UserUpdateDto": {
         "type": "object",
         "properties": {
-          "fullName": {
+          "FullName": {
             "type": "string",
             "nullable": true
           },
-          "phone": {
+          "Phone": {
             "type": "string",
             "nullable": true
           },
-          "address": {
+          "Address": {
             "type": "string",
             "nullable": true
           },
-          "gender": {
+          "Gender": {
             "type": "string",
             "nullable": true
           },
-          "birthDate": {
+          "BirthDate": {
             "type": "string",
             "format": "date",
             "nullable": true
           },
-          "oldPassword": {
+          "OldPassword": {
             "type": "string",
             "nullable": true
           },
-          "newPassword": {
+          "NewPassword": {
             "type": "string",
             "nullable": true
           },
-          "confirmPassword": {
+          "ConfirmPassword": {
             "type": "string",
             "nullable": true
           }
@@ -1645,34 +1645,34 @@
       "WorkshopDTO": {
         "type": "object",
         "properties": {
-          "title": {
+          "Title": {
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "Description": {
             "type": "string",
             "nullable": true
           },
-          "location": {
+          "Location": {
             "type": "string",
             "nullable": true
           },
-          "eventDate": {
+          "EventDate": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "maxAttendees": {
+          "MaxAttendees": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "price": {
+          "Price": {
             "type": "number",
             "format": "double",
             "nullable": true
           },
-          "imageUrl": {
+          "ImageUrl": {
             "type": "string",
             "nullable": true
           }
@@ -1682,21 +1682,21 @@
       "WorkshopTicketDTO": {
         "type": "object",
         "properties": {
-          "workshopId": {
+          "WorkshopId": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "ticketType": {
+          "TicketType": {
             "type": "string",
             "nullable": true
           },
-          "price": {
+          "Price": {
             "type": "number",
             "format": "double",
             "nullable": true
           },
-          "quantity": {
+          "Quantity": {
             "type": "integer",
             "format": "int32",
             "nullable": true
