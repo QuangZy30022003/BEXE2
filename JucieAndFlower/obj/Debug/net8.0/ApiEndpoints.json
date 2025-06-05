@@ -525,6 +525,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JucieAndFlower.Controllers.ProductsController",
+    "Method": "GetByCategoryId",
+    "RelativePath": "api/Products/categoryId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JucieAndFlower.Controllers.PromotionController",
     "Method": "GetAll",
     "RelativePath": "api/Promotion",

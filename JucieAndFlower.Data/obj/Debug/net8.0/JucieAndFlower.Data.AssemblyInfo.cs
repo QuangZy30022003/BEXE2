@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JucieAndFlower.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9f00ba79ffd1e510a9acb99f50114c3457ed18f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dfc4bff48afe2faea6aa3a9806479ea6b6dda72")]
 [assembly: System.Reflection.AssemblyProductAttribute("JucieAndFlower.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JucieAndFlower.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

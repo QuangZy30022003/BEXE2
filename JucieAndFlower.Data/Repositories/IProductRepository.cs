@@ -15,5 +15,7 @@ namespace JucieAndFlower.Data.Repositories
         Task UpdateAsync(Product product);
         Task DeleteAsync(Product product);
         Task<bool> SaveChangesAsync();
+
+        Task<List<Product>> GetByCategoryIdAsync(int categoryId);
     }
 }
