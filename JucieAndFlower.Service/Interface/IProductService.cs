@@ -15,6 +15,9 @@ namespace JucieAndFlower.Service.Interface
         Task<bool> CreateAsync(ProductCreateUpdateDto dto);
         Task<bool> UpdateAsync(int id, ProductCreateUpdateDto dto);
         Task<bool> DeleteAsync(int id);
+
+        Task<List<ProductDto>> GetByCategoryIdAsync(int categoryId);
+
     }
 
 }

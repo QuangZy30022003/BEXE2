@@ -57,5 +57,14 @@ namespace JucieAndFlower.Controllers
             if (!result) return NotFound();
             return Ok();
         }
+
+
+        [HttpGet("categoryId")]
+        public async Task<IActionResult> GetByCategoryId(int categoryId)
+        {
+            var products = await _productService.GetByCategoryIdAsync(categoryId);
+            return Ok(new { Success = true, Data = products });
+        }
+
     }
 }

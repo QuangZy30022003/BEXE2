@@ -94,5 +94,22 @@ namespace JucieAndFlower.Service.Service
             await _repo.DeleteAsync(product);
             return await _repo.SaveChangesAsync();
         }
+
+        public async Task<List<ProductDto>> GetByCategoryIdAsync(int categoryId)
+        {
+            var products = await _repo.GetByCategoryIdAsync(categoryId);
+            return products.Select(p => new ProductDto
+            {
+                ProductId = p.ProductId,
+                Name = p.Name,
+                Description = p.Description,
+                Price = p.Price ?? 0,
+                ImageUrl = p.ImageUrl,
+                CategoryId = p.CategoryId ?? 0,
+                IsAvailable = p.IsAvailable ?? true,
+                CreatedAt = p.CreatedAt ?? DateTime.Now
+            }).ToList();
+        }
+
     }
 }

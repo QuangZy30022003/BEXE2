@@ -40,6 +40,14 @@ namespace JucieAndFlower.Data.Repositories
 
         public async Task<bool> SaveChangesAsync() =>
             await _context.SaveChangesAsync() > 0;
+
+        public async Task<List<Product>> GetByCategoryIdAsync(int categoryId)
+        {
+          return await _context.Products
+                  .Include(p => p.Category)
+                .Where(p => p.CategoryId == categoryId)
+                .ToListAsync();
+        }
     }
 
 }
