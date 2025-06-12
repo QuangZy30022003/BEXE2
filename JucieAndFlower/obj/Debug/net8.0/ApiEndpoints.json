@@ -305,6 +305,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JucieAndFlower.Controllers.FlowerComponentsController",
+    "Method": "GetAll",
+    "RelativePath": "api/FlowerComponents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JucieAndFlower.Data.Models.FlowerComponent, JucieAndFlower.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.FlowerComponentsController",
+    "Method": "Create",
+    "RelativePath": "api/FlowerComponents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "component",
+        "Type": "JucieAndFlower.Data.Models.FlowerComponent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JucieAndFlower.Data.Models.FlowerComponent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.FlowerComponentsController",
+    "Method": "Get",
+    "RelativePath": "api/FlowerComponents/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JucieAndFlower.Data.Models.FlowerComponent",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.FlowerComponentsController",
+    "Method": "Update",
+    "RelativePath": "api/FlowerComponents/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "component",
+        "Type": "JucieAndFlower.Data.Models.FlowerComponent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.FlowerComponentsController",
+    "Method": "Delete",
+    "RelativePath": "api/FlowerComponents/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JucieAndFlower.Controllers.OrdersController",
     "Method": "GetOrderById",
     "RelativePath": "api/Orders",
