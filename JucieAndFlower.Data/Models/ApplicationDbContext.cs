@@ -41,6 +41,10 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<WorkshopTicket> WorkshopTickets { get; set; }
     public virtual DbSet<CartItem> CartItems { get; set; }
+    public virtual DbSet<FlowerComponent> FlowerComponents { get; set; }
+    public virtual DbSet<CustomFlowerItem> CustomFlowerItems { get; set; }
+
+
 
     //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -170,7 +174,58 @@ public partial class ApplicationDbContext : DbContext
 
             entity.HasOne(d => d.Workshop).WithMany(p => p.WorkshopTickets).HasConstraintName("FK__WorkshopT__Works__5FB337D6");
         });
+        modelBuilder.Entity<CustomFlowerItem>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_CustomFlowerItems");
 
+            entity.HasOne(d => d.CartItem)
+                .WithMany(c => c.CustomFlowerItems)
+                .HasForeignKey(d => d.CartItemId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CustomFlowerItems_CartItems");
+
+            entity.HasOne(d => d.Component)
+                .WithMany()
+                .HasForeignKey(d => d.ComponentId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CustomFlowerItems_FlowerComponents");
+        });
+        modelBuilder.Entity<CustomFlowerItem>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_CustomFlowerItems");
+
+            entity.Property(e => e.Quantity).IsRequired();
+
+            entity.HasOne(e => e.CartItem)
+                .WithMany(c => c.CustomFlowerItems)
+                .HasForeignKey(e => e.CartItemId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CustomFlowerItems_CartItems");
+
+            entity.HasOne(e => e.Component)
+                .WithMany()
+                .HasForeignKey(e => e.ComponentId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CustomFlowerItems_FlowerComponents");
+        });
+
+        modelBuilder.Entity<FlowerComponent>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_FlowerComponents");
+
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            entity.Property(e => e.Description)
+                .HasMaxLength(255);
+
+            entity.Property(e => e.Type)
+                .HasMaxLength(50);
+
+            entity.Property(e => e.Price)
+                .HasColumnType("decimal(18,2)");
+        });
         modelBuilder.Entity<CartItem>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_CartItems");
@@ -190,6 +245,12 @@ public partial class ApplicationDbContext : DbContext
                   .HasForeignKey(d => d.ProductId)
                   .OnDelete(DeleteBehavior.Cascade)
                   .HasConstraintName("FK_CartItems_Products");
+        //    entity.HasOne(d => d.CustomFlowerItems)
+        //.WithMany()
+        //.HasForeignKey(d => d.Id)
+        //.OnDelete(DeleteBehavior.SetNull)
+        //.HasConstraintName("FK_CartItems_CustomFlowerItems");
+
         });
 
 

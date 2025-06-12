@@ -26,4 +26,9 @@ public partial class CartItem
     [Required]
     [Range(1, int.MaxValue)]
     public int Quantity { get; set; }
+
+    public bool IsCustom { get; set; } = false; // ✅ Đánh dấu là bó hoa custom
+
+    [InverseProperty("CartItem")]
+    public virtual ICollection<CustomFlowerItem> CustomFlowerItems { get; set; } = new List<CustomFlowerItem>();
 }
