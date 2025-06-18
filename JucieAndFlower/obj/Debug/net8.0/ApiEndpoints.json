@@ -647,6 +647,27 @@
   },
   {
     "ContainingType": "JucieAndFlower.Controllers.ProductsController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Products/{productId}/images",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JucieAndFlower.Controllers.ProductsController",
     "Method": "GetByCategoryId",
     "RelativePath": "api/Products/categoryId",
     "HttpMethod": "GET",

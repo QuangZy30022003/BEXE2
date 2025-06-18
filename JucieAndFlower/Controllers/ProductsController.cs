@@ -11,10 +11,11 @@ namespace JucieAndFlower.Controllers
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
-
-        public ProductsController(IProductService productService)
+        private readonly IProductImageService _productImageService;
+        public ProductsController(IProductService productService, IProductImageService productImageService)
         {
             _productService = productService;
+            _productImageService = productImageService;
         }
 
         [HttpGet]
@@ -66,5 +67,20 @@ namespace JucieAndFlower.Controllers
             return Ok(new { Success = true, Data = products });
         }
 
+
+        [HttpPost("{productId}/images")]
+        [Authorize(Roles = "2,4")]
+        public async Task<IActionResult> UploadImage(int productId, IFormFile file)
+        {
+            try
+            {
+                var imageUrl = await _productImageService.UploadImageAsync(productId, file);
+                return Ok(new { success = true, imageUrl });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+        }
     }
 }

@@ -10,6 +10,13 @@ namespace JucieAndFlower.Data.Enities.Product
     {
         public int ProductId { get; set; }
         public DateTime CreatedAt { get; set; }
+        public List<ProductImageDto> Images { get; set; } = new();
     }
 
+
+    public class ProductImageDto
+    {
+        public int Id { get; set; }
+        public string ImageUrl { get; set; }
+    }
 }

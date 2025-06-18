@@ -3,6 +3,62 @@
   "WorkspaceRootPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\productimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\productimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\interface\\iproductimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\interface\\iproductimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\productimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\productimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\iproductimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\iproductimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658B4839-A2F4-45D4-9C37-84B57F2677ED}|JucieAndFlower.Service\\JucieAndFlower.Service.csproj|solutionrelative:jucieandflower.service\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\product\\productcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\product\\productcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\enities\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\enities\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD6FA84-1986-4994-9EFB-769EDF690C9A}|JucieAndFlower.Data\\JucieAndFlower.Data.csproj|solutionrelative:jucieandflower.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|d:\\myself\\be\\jucieandflower\\bexe2\\jucieandflower\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6813D61-DD22-4570-96CE-E9B993F6F7DE}|JucieAndFlower\\JucieAndFlower.csproj|solutionrelative:jucieandflower\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -110,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,7 +202,175 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\DependencyInjection.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\DependencyInjection.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\DependencyInjection.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:30:04.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\DependencyInjection.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\DependencyInjection.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\DependencyInjection.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwB0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:29:31.527Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ProductImageService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductImageService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\ProductImageService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductImageService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\ProductImageService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:28:50.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductImageService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductImageService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IProductImageService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IProductImageService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IProductImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:28:38.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductImageRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductImageRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ProductImageRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductImageRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\ProductImageRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:28:17.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductImageRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductImageRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IProductImageRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IProductImageRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IProductImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:28:06.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "JucieAndFlower\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:17:59.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductCreateUpdateDto.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Product\\ProductCreateUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:22:40.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Product\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:21:51.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:21:29.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\ProductImage.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\ProductImage.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:21:00.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\ProductService.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\ProductService.cs",
+              "RelativeToolTip": "JucieAndFlower.Service\\Service\\ProductService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:15:30.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:15:19.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\Product.cs",
+              "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Product.cs",
+              "RelativeToolTip": "JucieAndFlower.Data\\Models\\Product.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wDAAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:21:19.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PaymentRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\PaymentRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\PaymentRepository.cs",
@@ -154,12 +378,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\PaymentRepository.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAwDAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T07:10:51.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:10:51.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "IPaymentRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IPaymentRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IPaymentRepository.cs",
@@ -167,12 +390,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IPaymentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T07:10:41.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:10:41.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\PaymentService.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\PaymentService.cs",
@@ -180,12 +402,11 @@
               "RelativeToolTip": "JucieAndFlower.Service\\Service\\PaymentService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T07:09:42.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:09:42.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "IPaymentService.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IPaymentService.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IPaymentService.cs",
@@ -193,12 +414,11 @@
               "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IPaymentService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwBEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T07:09:27.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:09:27.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Interface\\IOrderService.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\Interface\\IOrderService.cs",
@@ -206,25 +426,23 @@
               "RelativeToolTip": "JucieAndFlower.Service\\Interface\\IOrderService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAUwBIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T06:44:05.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T06:44:05.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "JucieAndFlower\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:17:05.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:17:05.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "PayOSService.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\PayOSService.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\PayOSService.cs",
@@ -232,12 +450,11 @@
               "RelativeToolTip": "JucieAndFlower.Service\\Service\\PayOSService.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAmwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:49:39.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:49:39.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\OrderDetail.cs",
@@ -245,12 +462,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Models\\OrderDetail.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:09:16.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:09:16.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Program.cs",
               "RelativeDocumentMoniker": "JucieAndFlower\\Program.cs",
@@ -258,12 +474,11 @@
               "RelativeToolTip": "JucieAndFlower\\Program.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAuwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:23:09.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:23:09.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "PayOSConfig.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\VnPay\\PayOSConfig.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\VnPay\\PayOSConfig.cs",
@@ -271,12 +486,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Enities\\VnPay\\PayOSConfig.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAjwBYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T06:57:51.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T06:57:51.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\Order.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\Order.cs",
@@ -284,12 +498,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Models\\Order.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:07:44.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:07:44.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "OrderService.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\Service\\OrderService.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\Service\\OrderService.cs",
@@ -297,12 +510,11 @@
               "RelativeToolTip": "JucieAndFlower.Service\\Service\\OrderService.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAmwLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:50:16.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:50:16.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 34,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Models\\CartItem.cs",
@@ -314,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\OrderRepository.cs",
@@ -322,12 +534,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\OrderRepository.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAA+wD0AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:50:36.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:50:36.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\IOrderRepository.cs",
@@ -335,12 +546,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Repositories\\IOrderRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAUwBgAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:51:27.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:51:27.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 32,
               "Title": "CartRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\CartRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\CartRepository.cs",
@@ -352,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "ICartRepository.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Repositories\\ICartRepository.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Repositories\\ICartRepository.cs",
@@ -364,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "JucieAndFlower.Service.csproj",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\JucieAndFlower.Service.csproj",
               "RelativeDocumentMoniker": "JucieAndFlower.Service\\JucieAndFlower.Service.csproj",
@@ -376,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 29,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "JucieAndFlower\\Controllers\\PaymentController.cs",
@@ -388,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\appsettings.json",
               "RelativeDocumentMoniker": "JucieAndFlower\\appsettings.json",
@@ -400,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 36,
               "Title": "OrderResponseDTO.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Order\\OrderResponseDTO.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Order\\OrderResponseDTO.cs",
@@ -412,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 37,
               "Title": "OrderDto.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Order\\OrderDto.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Order\\OrderDto.cs",
@@ -424,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "OrderFromCartDTO.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Order\\OrderFromCartDTO.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Order\\OrderFromCartDTO.cs",
@@ -436,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 28,
               "Title": "OrderDetailCreateDTO.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Order\\OrderDetailCreateDTO.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Order\\OrderDetailCreateDTO.cs",
@@ -444,12 +654,11 @@
               "RelativeToolTip": "JucieAndFlower.Data\\Enities\\Order\\OrderDetailCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:03:48.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:03:48.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 35,
               "Title": "OrderCreateDTO.cs",
               "DocumentMoniker": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Data\\Enities\\Order\\OrderCreateDTO.cs",
               "RelativeDocumentMoniker": "JucieAndFlower.Data\\Enities\\Order\\OrderCreateDTO.cs",

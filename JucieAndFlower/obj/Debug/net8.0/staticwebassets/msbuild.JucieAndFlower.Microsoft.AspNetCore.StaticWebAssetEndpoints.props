@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/JucieAndFlower/images/d9722840-ee84-4325-83dc-40cb0fa007f0.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qy6vetEYfIPwFnjJvql/AIpP7Gedgl9k6rCqJqKtaMw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12804"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qy6vetEYfIPwFnjJvql/AIpP7Gedgl9k6rCqJqKtaMw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 07:36:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/JucieAndFlower/images/d9722840-ee84-4325-83dc-40cb0fa007f0.pzx1zzsdzu.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pzx1zzsdzu"},{"Name":"integrity","Value":"sha256-qy6vetEYfIPwFnjJvql/AIpP7Gedgl9k6rCqJqKtaMw="},{"Name":"label","Value":"_content/JucieAndFlower/images/d9722840-ee84-4325-83dc-40cb0fa007f0.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12804"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qy6vetEYfIPwFnjJvql/AIpP7Gedgl9k6rCqJqKtaMw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 07:36:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
