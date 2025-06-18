@@ -44,6 +44,7 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<FlowerComponent> FlowerComponents { get; set; }
     public virtual DbSet<CustomFlowerItem> CustomFlowerItems { get; set; }
 
+    public DbSet<ProductImage> ProductImages { get; set; }
 
 
     //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

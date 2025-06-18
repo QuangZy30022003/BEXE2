@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg",
+      "PackagePath": "staticwebassets\\images\\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JucieAndFlower.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JucieAndFlower.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JucieAndFlower.props",
+      "PackagePath": "build\\JucieAndFlower.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JucieAndFlower.props",
+      "PackagePath": "buildMultiTargeting\\JucieAndFlower.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JucieAndFlower.props",
+      "PackagePath": "buildTransitive\\JucieAndFlower.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

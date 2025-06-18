@@ -46,4 +46,6 @@ public partial class Product
 
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 
+    public ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
+
 }

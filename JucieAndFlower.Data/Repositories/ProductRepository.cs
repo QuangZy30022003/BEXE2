@@ -18,11 +18,15 @@ namespace JucieAndFlower.Data.Repositories
         }
 
         public async Task<List<Product>> GetAllAsync() =>
-         await _context.Products.Include(p => p.Category).ToListAsync();
-
+await _context.Products
+        .Include(p => p.Category)
+        .Include(p => p.Images)
+        .ToListAsync();
         public async Task<Product?> GetByIdAsync(int id) =>
-            await _context.Products.Include(p => p.Category).FirstOrDefaultAsync(p => p.ProductId == id);
-
+      await _context.Products
+          .Include(p => p.Category)
+          .Include(p => p.Images)
+          .FirstOrDefaultAsync(p => p.ProductId == id);
         public async Task AddAsync(Product product)
         {
             await _context.Products.AddAsync(product);
