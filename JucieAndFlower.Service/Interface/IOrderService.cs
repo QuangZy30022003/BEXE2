@@ -21,6 +21,9 @@ namespace JucieAndFlower.Service.Interface
         Task AutoCancelExpiredPendingOrdersAsync();
 
         Task<List<OrderResponseDTO>> GetOrdersByUserIdAsync(int userId);
+
+        Task<Order?> GetOrderByPayOSOrderCodeAsync(int payOSOrderCode);
+
     }
 
 }

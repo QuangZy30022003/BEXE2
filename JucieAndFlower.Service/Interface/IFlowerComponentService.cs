@@ -1,4 +1,5 @@
-﻿using JucieAndFlower.Data.Models;
+﻿using JucieAndFlower.Data.Enities.CusFlower;
+using JucieAndFlower.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace JucieAndFlower.Service.Interface
 {
     public interface IFlowerComponentService
     {
-        Task<IEnumerable<FlowerComponent>> GetAllAsync();
-        Task<FlowerComponent?> GetByIdAsync(int id);
-        Task<FlowerComponent> CreateAsync(FlowerComponent component);
-        Task<bool> UpdateAsync(int id, FlowerComponent component);
-        Task<bool> DeleteAsync(int id);
+        Task<IEnumerable<FlowerComponentDto>> GetAllAsync();
+        Task<FlowerComponentDto> GetByIdAsync(int id);
+        Task AddAsync(FlowerComponentDto dto);
+        Task UpdateAsync(int id, FlowerComponentDto dto);
+        Task DeleteAsync(int id);
     }
 }

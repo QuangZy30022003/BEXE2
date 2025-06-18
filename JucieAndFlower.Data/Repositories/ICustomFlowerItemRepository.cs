@@ -9,11 +9,9 @@ namespace JucieAndFlower.Data.Repositories
 {
     public interface ICustomFlowerItemRepository
     {
-        Task<IEnumerable<CustomFlowerItem>> GetAllAsync();
+        Task<CustomFlowerItem> AddAsync(CustomFlowerItem item);
+        Task<List<CustomFlowerItem>> GetByUserIdAsync(int userId);
+
         Task<CustomFlowerItem?> GetByIdAsync(int id);
-        Task AddAsync(CustomFlowerItem item);
-        Task UpdateAsync(CustomFlowerItem item);
-        Task DeleteAsync(int id);
-        Task<bool> ExistsAsync(int id);
     }
 }

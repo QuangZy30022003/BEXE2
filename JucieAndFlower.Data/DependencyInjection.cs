@@ -25,7 +25,7 @@ namespace JucieAndFlower.Data
             service.AddScoped<IPromotionRepository, PromotionRepository>();
             service.AddScoped<IFeedbackRepository, FeedbackRepository>();
             service.AddScoped<IRevenueRepository, RevenueRepository>();
-       //     service.AddScoped<ICustomFlowerItemRepository, CustomFlowerItemRepository>();
+            service.AddScoped<ICustomFlowerItemRepository, CustomFlowerItemRepository>();
        service.AddScoped<IFlowerComponentRepository, FlowerComponentRepository>();
             return service;
         }

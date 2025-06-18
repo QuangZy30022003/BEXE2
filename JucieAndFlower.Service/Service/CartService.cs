@@ -13,10 +13,12 @@ namespace JucieAndFlower.Service.Service
     public class CartService : ICartService
     {
         private readonly ICartRepository _cartRepository;
+        private readonly ICustomFlowerItemRepository _customFlowerItemRepository;
 
-        public CartService(ICartRepository cartRepository)
+        public CartService(ICartRepository cartRepository, ICustomFlowerItemRepository customFlowerItemRepository)
         {
             _cartRepository = cartRepository;
+            _customFlowerItemRepository = customFlowerItemRepository;
         }
 
         public async Task<List<CartItemResponseDTO>> GetUserCartAsync(int userId)
@@ -25,7 +27,7 @@ namespace JucieAndFlower.Service.Service
             return items.Select(c => new CartItemResponseDTO
             {
                 Id = c.Id,
-                ProductId = c.ProductId,
+                ProductId = c.ProductId.HasValue ? c.ProductId.Value : throw new InvalidOperationException("ProductId cannot be null."),
                 ProductName = c.Product.Name,
                 Quantity = c.Quantity
             }).ToList();
@@ -59,5 +61,38 @@ namespace JucieAndFlower.Service.Service
                 await _cartRepository.DeleteAsync(item);
             }
         }
+
+        public async Task AddCustomItemToCartAsync(int userId, CustomCartItemCreateDTO dto)
+        {
+            // Lấy custom flower item từ DB
+            var customItem = await _customFlowerItemRepository.GetByIdAsync(dto.CustomFlowerItemId);
+            if (customItem == null)
+                throw new Exception("Custom flower item not found.");
+
+            if (customItem.UserId != userId)
+                throw new Exception("You are not allowed to add this item to your cart.");
+
+            if (customItem.Quantity < 1)
+                throw new Exception("Invalid quantity for custom flower item.");
+
+            // Kiểm tra giỏ hàng đã có chưa
+            var existingItem = await _cartRepository.GetByUserAndCustomItemAsync(userId, dto.CustomFlowerItemId);
+            if (existingItem != null)
+            {
+                existingItem.Quantity += customItem.Quantity;
+                await _cartRepository.UpdateAsync(existingItem);
+            }
+            else
+            {
+                var newItem = new CartItem
+                {
+                    UserId = userId,
+                    CustomFlowerItemId = customItem.CustomFlowerItemId,
+                    Quantity = customItem.Quantity,
+                };
+                await _cartRepository.AddAsync(newItem);
+            }
+        }
+
     }
 }

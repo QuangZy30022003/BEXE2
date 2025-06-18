@@ -15,6 +15,8 @@ namespace JucieAndFlower.Service.Interface
 
         Task<List<Payment>> GetPaymentsByUserIdAsync(int userId);
 
+        Task<Payment?> GetPaymentByOrderIdAsync(int orderId);
+
     }
 
 }

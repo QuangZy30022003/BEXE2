@@ -62,4 +62,6 @@ public partial class User
     public virtual ICollection<UserWorkshopTicket> UserWorkshopTickets { get; set; } = new List<UserWorkshopTicket>();
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 
+    public virtual ICollection<CustomFlowerItem> CustomFlowerItems { get; set; } = new List<CustomFlowerItem>();
+
 }

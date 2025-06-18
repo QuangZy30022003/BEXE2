@@ -16,12 +16,14 @@ namespace JucieAndFlower.Controllers
         private readonly IVNPayService _vnpayService;
         private readonly IPaymentService _paymentService;
         private readonly IEmailService _emailService;
-        public OrdersController(IOrderService orderService, IVNPayService vnpayService, IPaymentService paymentService, IEmailService emailService)
+        private readonly IPayOSService _payOSService;
+        public OrdersController(IOrderService orderService, IVNPayService vnpayService, IPaymentService paymentService, IEmailService emailService, IPayOSService payOSService)
         {
             _orderService = orderService;
             _vnpayService = vnpayService;
             _paymentService = paymentService;
             _emailService = emailService;
+            _payOSService = payOSService;
         }
 
      
@@ -68,47 +70,54 @@ namespace JucieAndFlower.Controllers
             }
         }
 
-        // Dùng cho testing API chứ không redirect nữa
         [HttpGet("payment-return")]
         [AllowAnonymous]
         public async Task<IActionResult> PaymentReturn()
         {
             try
             {
-                // 1. Lấy dữ liệu từ VNPay (Request.Query)
-                var response = _vnpayService.GetReturnData(Request.Query);
-                Console.WriteLine("VNPay OrderId: " + response.OrderId);
-                Console.WriteLine("VNPay Success: " + response.Success);
+                var response = _payOSService.GetReturnData(Request.Query);
 
-                // 2. Kiểm tra đơn hàng tồn tại
-                var order = await _orderService.GetOrderByIdAsync(response.OrderId);
+                // ✅ Tìm đơn hàng theo PayOSOrderCode chứ không phải OrderId
+                var order = await _orderService.GetOrderByPayOSOrderCodeAsync(response.PayOSOrderCode);
                 if (order == null)
+                    if (order == null)
                 {
-                    return Redirect($"http://localhost:5173/payment-result?success=false&message=Order not found&orderId={response.OrderId}");
+                    return Redirect($"http://localhost:5173/payment-result?success=false&message=Order not found&orderId=0");
                 }
 
-                // 3. Ghi nhận thanh toán
-                var payment = new Payment
+                // Tránh tạo nhiều Payment nếu reload
+                var existingPayment = await _paymentService.GetPaymentByOrderIdAsync(order.OrderId);
+                if (existingPayment == null)
                 {
-                    OrderId = order.OrderId,
-                    PaymentMethod = "VNPay",
-                    PaidAmount = order.FinalAmount,
-                    PaymentDate = DateTime.Now,
-                    Status = response.Success ? "Paid" : "Cancel"
-                };
-                await _paymentService.AddPaymentAsync(payment);
+                    var payment = new Payment
+                    {
+                        OrderId = order.OrderId,
+                        PaymentMethod = "PayOS",
+                        PaidAmount = order.FinalAmount,
+                        PaymentDate = DateTime.Now,
+                        Status = response.Success ? "Paid" : "Cancel"
+                    };
+                    await _paymentService.AddPaymentAsync(payment);
+                }
 
-                // 4. Cập nhật trạng thái đơn hàng
-                if (response.Success)
+                // Cập nhật trạng thái đơn hàng
+                if (order.Status == "Pending")
                 {
-                    await _orderService.MarkOrderAsCompleteAsync(order.OrderId);
-                    return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&amount={order.FinalAmount}&message=Payment successful");
+                    if (response.Success)
+                    {
+                        await _orderService.MarkOrderAsCompleteAsync(order.OrderId);
+                        return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&amount={order.FinalAmount}&message=Payment successful");
+                    }
+                    else
+                    {
+                        await _orderService.MarkOrderAsCanceledAsync(order.OrderId);
+                        return Redirect($"http://localhost:5173/payment-result?success=false&orderId={order.OrderId}&message=Payment failed or canceled");
+                    }
                 }
-                else
-                {
-                    await _orderService.MarkOrderAsCanceledAsync(order.OrderId);
-                    return Redirect($"http://localhost:5173/payment-result?success=false&orderId={order.OrderId}&message=Payment failed or canceled");
-                }
+
+                // Nếu đơn hàng đã xử lý rồi
+                return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&message=Order already processed");
             }
             catch (Exception ex)
             {
@@ -118,17 +127,21 @@ namespace JucieAndFlower.Controllers
         }
 
 
+
         [HttpPost("from-cart")]
         public async Task<IActionResult> CreateOrderFromCart([FromBody] OrderFromCartDTO dto)
         {
             int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("User ID claim not found"));
             dto.UserId = userId;
+
             var order = await _orderService.CreateOrderFromCartAsync(dto);
             decimal totalAmount = (decimal)order.FinalAmount;
-            var paymentUrl = _vnpayService.CreatePaymentUrl(order.OrderId, totalAmount, HttpContext);
 
+            // Gọi PayOS thay vì VNPay
+            var paymentUrl = await _payOSService.CreatePaymentUrlAsync(order.OrderId, totalAmount, HttpContext);
             string email = User.FindFirst(ClaimTypes.Email)?.Value ?? "default@example.com";
             await _emailService.SendOrderInvoiceEmailAsync(email, order);
+
             return Ok(new
             {
                 order.OrderId,

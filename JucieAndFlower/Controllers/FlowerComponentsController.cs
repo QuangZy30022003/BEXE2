@@ -1,14 +1,14 @@
-﻿using JucieAndFlower.Data.Models;
+﻿using JucieAndFlower.Data.Enities.CusFlower;
+using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JucieAndFlower.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class FlowerComponentsController : Controller
+    [Route("api/[controller]")]
+    public class FlowerComponentsController : ControllerBase
     {
-
         private readonly IFlowerComponentService _service;
 
         public FlowerComponentsController(IFlowerComponentService service)
@@ -17,41 +17,39 @@ namespace JucieAndFlower.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<FlowerComponent>>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var items = await _service.GetAllAsync();
-            return Ok(items);
+            var result = await _service.GetAllAsync();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<FlowerComponent>> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var item = await _service.GetByIdAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
+            var result = await _service.GetByIdAsync(id);
+            if (result == null) return NotFound();
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<ActionResult<FlowerComponent>> Create(FlowerComponent component)
+        public async Task<IActionResult> Create([FromBody] FlowerComponentDto dto)
         {
-            var created = await _service.CreateAsync(component);
-            return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
+            await _service.AddAsync(dto);
+            return Ok();
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, FlowerComponent component)
+        public async Task<IActionResult> Update(int id, [FromBody] FlowerComponentDto dto)
         {
-            var success = await _service.UpdateAsync(id, component);
-            if (!success) return NotFound();
-            return NoContent();
+            await _service.UpdateAsync(id, dto);
+            return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var success = await _service.DeleteAsync(id);
-            if (!success) return NotFound();
-            return NoContent();
+            await _service.DeleteAsync(id);
+            return Ok();
         }
     }
 }

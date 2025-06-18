@@ -19,5 +19,8 @@ namespace JucieAndFlower.Data.Repositories
         Task<List<CartItem>> GetCartItemsByIdsAsync(List<int> ids);
         Task DeleteRangeAsync(List<CartItem> items);
 
+        Task<CartItem?> GetByUserAndCustomItemAsync(int userId, int customItemId);
+
+        IQueryable<CartItem> GetAll();
     }
 }

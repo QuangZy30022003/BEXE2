@@ -28,8 +28,9 @@ namespace JucieAndFlower.Service
             service.AddScoped<IEmailService, EmailService>();
             service.AddScoped<IFeedbackService, FeedbackService>();
             service.AddScoped<IRevenueService, RevenueService>();
-            //       service.AddScoped<ICustomFlowerItemService, CustomFlowerItemService>();
+            service.AddScoped<ICustomFlowerItemService, CustomFlowerItemService>();
             service.AddScoped<IFlowerComponentService, FlowerComponentService>();
+            service.AddScoped<IPayOSService, PayOSService>();
             return service;
         }
     }

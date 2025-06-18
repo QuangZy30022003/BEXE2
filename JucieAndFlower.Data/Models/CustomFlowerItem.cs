@@ -11,23 +11,28 @@ namespace JucieAndFlower.Data.Models
     public class CustomFlowerItem
     {
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CustomFlowerItemId { get; set; }
 
         [Required]
-        public int CartItemId { get; set; }
-
-        [Required]
-        public int ComponentId { get; set; }
+        public int FlowerComponentId { get; set; } 
 
         [Required]
         [Range(1, 100)]
         public int Quantity { get; set; }
 
-        [ForeignKey("CartItemId")]
-        public virtual CartItem CartItem { get; set; } = null!;
+        [Required]
+        public int UserId { get; set; }
 
-        [ForeignKey("ComponentId")]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public virtual CartItem? CartItem { get; set; }
+
+        [ForeignKey("FlowerComponentId")]
         public virtual FlowerComponent Component { get; set; } = null!;
+
+        [ForeignKey("UserId")]
+        public virtual User User { get; set; } = null!;
     }
 
 }

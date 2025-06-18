@@ -176,38 +176,25 @@ public partial class ApplicationDbContext : DbContext
         });
         modelBuilder.Entity<CustomFlowerItem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK_CustomFlowerItems");
+            entity.HasKey(e => e.CustomFlowerItemId).HasName("PK_CustomFlowerItems");
 
-            entity.HasOne(d => d.CartItem)
-                .WithMany(c => c.CustomFlowerItems)
-                .HasForeignKey(d => d.CartItemId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_CustomFlowerItems_CartItems");
-
-            entity.HasOne(d => d.Component)
-                .WithMany()
-                .HasForeignKey(d => d.ComponentId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_CustomFlowerItems_FlowerComponents");
-        });
-        modelBuilder.Entity<CustomFlowerItem>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK_CustomFlowerItems");
-
-            entity.Property(e => e.Quantity).IsRequired();
-
-            entity.HasOne(e => e.CartItem)
-                .WithMany(c => c.CustomFlowerItems)
-                .HasForeignKey(e => e.CartItemId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_CustomFlowerItems_CartItems");
+            entity.Property(e => e.CreatedAt)
+                  .HasDefaultValueSql("(getdate())");
 
             entity.HasOne(e => e.Component)
-                .WithMany()
-                .HasForeignKey(e => e.ComponentId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_CustomFlowerItems_FlowerComponents");
+                  .WithMany(c => c.CustomFlowerItems)
+                  .HasForeignKey(e => e.FlowerComponentId)
+                  .OnDelete(DeleteBehavior.Cascade)
+                  .HasConstraintName("FK_CustomFlowerItems_FlowerComponents");
+
+            entity.HasOne(e => e.User)
+                  .WithMany(u => u.CustomFlowerItems)
+                  .HasForeignKey(e => e.UserId)
+                  .OnDelete(DeleteBehavior.Cascade)
+                  .HasConstraintName("FK_CustomFlowerItems_Users");
         });
+
+
 
         modelBuilder.Entity<FlowerComponent>(entity =>
         {
@@ -217,15 +204,20 @@ public partial class ApplicationDbContext : DbContext
                 .IsRequired()
                 .HasMaxLength(100);
 
-            entity.Property(e => e.Description)
-                .HasMaxLength(255);
+            entity.Property(e => e.UnitPrice)
+                .HasColumnType("decimal(18,2)")
+                .IsRequired();
 
-            entity.Property(e => e.Type)
+            entity.Property(e => e.Unit)
                 .HasMaxLength(50);
 
-            entity.Property(e => e.Price)
-                .HasColumnType("decimal(18,2)");
+            entity.Property(e => e.ImageUrl)
+                .HasMaxLength(255);
+
+            entity.Property(e => e.Color)
+                .HasMaxLength(50);
         });
+
         modelBuilder.Entity<CartItem>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_CartItems");
@@ -235,7 +227,7 @@ public partial class ApplicationDbContext : DbContext
                   .HasDefaultValue(1);
 
             entity.HasOne(d => d.User)
-                  .WithMany(p => p.CartItems)
+                  .WithMany(u => u.CartItems)
                   .HasForeignKey(d => d.UserId)
                   .OnDelete(DeleteBehavior.Cascade)
                   .HasConstraintName("FK_CartItems_Users");
@@ -243,14 +235,14 @@ public partial class ApplicationDbContext : DbContext
             entity.HasOne(d => d.Product)
                   .WithMany(p => p.CartItems)
                   .HasForeignKey(d => d.ProductId)
-                  .OnDelete(DeleteBehavior.Cascade)
+                  .OnDelete(DeleteBehavior.SetNull)
                   .HasConstraintName("FK_CartItems_Products");
-        //    entity.HasOne(d => d.CustomFlowerItems)
-        //.WithMany()
-        //.HasForeignKey(d => d.Id)
-        //.OnDelete(DeleteBehavior.SetNull)
-        //.HasConstraintName("FK_CartItems_CustomFlowerItems");
 
+            entity.HasOne(d => d.CustomFlowerItem)
+         .WithOne(c => c.CartItem)
+         .HasForeignKey<CartItem>(d => d.CustomFlowerItemId)
+         .OnDelete(DeleteBehavior.Cascade)
+         .HasConstraintName("FK_CartItems_CustomFlowerItems");
         });
 
 
