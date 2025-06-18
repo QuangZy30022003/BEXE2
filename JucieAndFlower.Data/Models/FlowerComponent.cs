@@ -17,13 +17,18 @@ namespace JucieAndFlower.Data.Models
         [StringLength(100)]
         public string Name { get; set; } = null!;
 
-        [StringLength(255)]
-        public string? Description { get; set; }
-
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
+        public decimal UnitPrice { get; set; }
 
         [StringLength(50)]
-        public string? Type { get; set; } // e.g., "Flower", "Accessory", "Color"
-    }
+        public string? Unit { get; set; }
+
+        [StringLength(255)]
+        public string? ImageUrl { get; set; }
+
+        [StringLength(50)]
+        public string? Color { get; set; }
+
+        public virtual ICollection<CustomFlowerItem> CustomFlowerItems { get; set; } = new List<CustomFlowerItem>();
+}
 }

@@ -13,6 +13,8 @@ namespace JucieAndFlower.Data.Repositories
         Task SaveChangesAsync();
         Task<List<Payment>> GetAllAsync();
         Task<List<Payment>> GetByUserIdAsync(int userId);
+
+        Task<Payment?> GetPaymentByOrderIdAsync(int orderId);
     }
 
 }

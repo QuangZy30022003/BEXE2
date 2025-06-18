@@ -65,5 +65,15 @@ namespace JucieAndFlower.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<CartItem?> GetByUserAndCustomItemAsync(int userId, int customItemId)
+        {
+            return await _context.CartItems.FirstOrDefaultAsync(c =>
+                c.UserId == userId && c.CustomFlowerItemId == customItemId);
+        }
+
+        public IQueryable<CartItem> GetAll()
+        {
+            return _context.CartItems.AsQueryable();
+        }
     }
 }

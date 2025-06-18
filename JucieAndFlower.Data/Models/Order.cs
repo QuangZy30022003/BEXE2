@@ -37,6 +37,8 @@ public partial class Order
     [StringLength(50)]
     public string? PromotionCode { get; set; }
 
+    public int? PayOSOrderCode { get; set; }
+
     [InverseProperty("Order")]
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 

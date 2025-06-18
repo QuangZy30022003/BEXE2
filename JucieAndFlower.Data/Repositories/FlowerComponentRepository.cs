@@ -19,21 +19,20 @@ namespace JucieAndFlower.Data.Repositories
         }
 
         public async Task<IEnumerable<FlowerComponent>> GetAllAsync() =>
-            await _context.FlowerComponents.ToListAsync();
+          await _context.FlowerComponents.ToListAsync();
 
-        public async Task<FlowerComponent?> GetByIdAsync(int id) =>
+        public async Task<FlowerComponent> GetByIdAsync(int id) =>
             await _context.FlowerComponents.FindAsync(id);
 
-        public async Task<FlowerComponent> AddAsync(FlowerComponent component)
+        public async Task AddAsync(FlowerComponent component)
         {
             _context.FlowerComponents.Add(component);
             await _context.SaveChangesAsync();
-            return component;
         }
 
         public async Task UpdateAsync(FlowerComponent component)
         {
-            _context.Entry(component).State = EntityState.Modified;
+            _context.FlowerComponents.Update(component);
             await _context.SaveChangesAsync();
         }
 
@@ -47,4 +46,4 @@ namespace JucieAndFlower.Data.Repositories
             }
         }
     }
-}
+    }

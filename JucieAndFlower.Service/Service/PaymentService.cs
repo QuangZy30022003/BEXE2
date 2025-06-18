@@ -33,6 +33,11 @@ namespace JucieAndFlower.Service.Service
         {
             return await _paymentRepository.GetByUserIdAsync(userId);
         }
+
+        public async Task<Payment?> GetPaymentByOrderIdAsync(int orderId)
+        {
+            return await _paymentRepository.GetPaymentByOrderIdAsync(orderId);
+        }
     }
 
 }

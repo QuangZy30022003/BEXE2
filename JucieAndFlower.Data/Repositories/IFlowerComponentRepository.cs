@@ -10,8 +10,8 @@ namespace JucieAndFlower.Service.Interface
     public interface IFlowerComponentRepository
     {
         Task<IEnumerable<FlowerComponent>> GetAllAsync();
-        Task<FlowerComponent?> GetByIdAsync(int id);
-        Task<FlowerComponent> AddAsync(FlowerComponent component);
+        Task<FlowerComponent> GetByIdAsync(int id);
+        Task AddAsync(FlowerComponent component);
         Task UpdateAsync(FlowerComponent component);
         Task DeleteAsync(int id);
     }

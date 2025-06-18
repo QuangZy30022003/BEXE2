@@ -40,5 +40,16 @@ namespace JucieAndFlower.Controllers
             return Ok(new { message = "Item removed from cart." });
         }
 
+
+        [HttpPost("custom")]
+        public async Task<IActionResult> AddCustomItem([FromBody] CustomCartItemCreateDTO dto)
+        {
+            int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value
+                                   ?? throw new Exception("User ID not found"));
+
+            await _cartService.AddCustomItemToCartAsync(userId, dto);
+            return Ok(new { message = "Custom flower item added to cart." });
+        }
+
     }
 }

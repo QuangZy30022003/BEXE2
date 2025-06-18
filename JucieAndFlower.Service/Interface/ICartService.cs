@@ -12,5 +12,7 @@ namespace JucieAndFlower.Service.Interface
         Task<List<CartItemResponseDTO>> GetUserCartAsync(int userId);
         Task AddOrUpdateCartItemAsync(int userId, CartItemCreateDTO dto);
         Task RemoveCartItemAsync(int userId, int productId);
+        Task AddCustomItemToCartAsync(int userId, CustomCartItemCreateDTO dto);
+
     }
 }

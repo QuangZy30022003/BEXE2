@@ -50,7 +50,6 @@ namespace JucieAndFlower.Service.Service
             };
         }
 
-
         public async Task<List<OrderResponseDTO>> GetOrdersByUserIdAsync(int userId)
         {
             var orders = await _orderRepository.GetOrdersByUserIdAsync(userId);
@@ -169,6 +168,12 @@ namespace JucieAndFlower.Service.Service
                 await _orderRepository.SaveChangesAsync();
             }
         }
+
+        public async Task<Order?> GetOrderByPayOSOrderCodeAsync(int payOSOrderCode)
+        {
+            return await _orderRepository.GetOrderByPayOSOrderCodeAsync(payOSOrderCode);
+        }
+
 
     }
 

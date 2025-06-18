@@ -17,18 +17,18 @@ public partial class CartItem
     [ForeignKey("UserId")]
     public virtual User User { get; set; } = null!;
 
-    [Required]
-    public int ProductId { get; set; }
+    public int? ProductId { get; set; }
 
     [ForeignKey("ProductId")]
     public virtual Product Product { get; set; } = null!;
+
+
+    public int? CustomFlowerItemId { get; set; }
+    [ForeignKey("CustomFlowerItemId")]
+    public virtual CustomFlowerItem? CustomFlowerItem { get; set; }
 
     [Required]
     [Range(1, int.MaxValue)]
     public int Quantity { get; set; }
 
-    public bool IsCustom { get; set; } = false; // ✅ Đánh dấu là bó hoa custom
-
-    [InverseProperty("CartItem")]
-    public virtual ICollection<CustomFlowerItem> CustomFlowerItems { get; set; } = new List<CustomFlowerItem>();
 }

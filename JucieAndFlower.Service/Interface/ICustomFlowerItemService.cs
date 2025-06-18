@@ -10,10 +10,7 @@ namespace JucieAndFlower.Service.Interface
 {
     public interface ICustomFlowerItemService
     {
-        Task<IEnumerable<CustomFlowerItem>> GetAllAsync();
-        Task<CustomFlowerItem?> GetByIdAsync(int id);
-        Task<CustomFlowerItem> AddAsync(CreateCustomFlowerItemDto dto);
-        Task<bool> UpdateAsync(int id, UpdateCustomFlowerItemDto dto);
-        Task<bool> DeleteAsync(int id);
+        Task<CustomFlowerItem> CreateCustomItemAsync(int userId, CustomFlowerItemCreateDTO dto);
+        Task<List<CustomFlowerItem>> GetUserCustomItemsAsync(int userId);
     }
 }

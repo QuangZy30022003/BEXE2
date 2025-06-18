@@ -41,6 +41,12 @@ namespace JucieAndFlower.Data.Repositories
                 .Where(p => p.Order.UserId == userId)
                 .ToListAsync();
         }
+
+        public async Task<Payment?> GetPaymentByOrderIdAsync(int orderId)
+        {
+            return await _context.Payments
+                .FirstOrDefaultAsync(p => p.OrderId == orderId);
+        }
     }
 
 }

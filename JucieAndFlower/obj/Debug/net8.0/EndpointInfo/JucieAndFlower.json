@@ -245,6 +245,37 @@
         }
       }
     },
+    "/api/Cart/custom": {
+      "post": {
+        "tags": [
+          "Cart"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomCartItemCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomCartItemCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomCartItemCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Category": {
       "get": {
         "tags": [
@@ -362,6 +393,47 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CustomFlowerItem": {
+      "post": {
+        "tags": [
+          "CustomFlowerItem"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomFlowerItemCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomFlowerItemCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomFlowerItemCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "CustomFlowerItem"
         ],
         "responses": {
           "200": {
@@ -502,33 +574,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FlowerComponent"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FlowerComponent"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FlowerComponent"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -540,41 +586,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -597,24 +626,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlowerComponent"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -637,17 +649,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/FlowerComponent"
+                "$ref": "#/components/schemas/FlowerComponentDto"
               }
             }
           }
@@ -1580,6 +1592,32 @@
         },
         "additionalProperties": false
       },
+      "CustomCartItemCreateDTO": {
+        "type": "object",
+        "properties": {
+          "CustomFlowerItemId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomFlowerItemCreateDTO": {
+        "type": "object",
+        "properties": {
+          "FlowerComponentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Quantity": {
+            "maximum": 100,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "FeedbackCreateDto": {
         "type": "object",
         "properties": {
@@ -1626,34 +1664,26 @@
         },
         "additionalProperties": false
       },
-      "FlowerComponent": {
-        "required": [
-          "Name"
-        ],
+      "FlowerComponentDto": {
         "type": "object",
         "properties": {
-          "Id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "Name": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "Description": {
-            "maxLength": 255,
-            "minLength": 0,
             "type": "string",
             "nullable": true
           },
-          "Price": {
+          "UnitPrice": {
             "type": "number",
             "format": "double"
           },
-          "Type": {
-            "maxLength": 50,
-            "minLength": 0,
+          "Unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "ImageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "Color": {
             "type": "string",
             "nullable": true
           }

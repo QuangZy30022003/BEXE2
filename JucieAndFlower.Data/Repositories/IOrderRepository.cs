@@ -1,4 +1,6 @@
 ﻿using JucieAndFlower.Data.Models;
+
+using JucieAndFlower.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +18,10 @@ namespace JucieAndFlower.Data.Repositories
 
         Task<List<Order>> GetPendingOrdersAsync();
 
-        Task<List<Order>> GetOrdersByUserIdAsync(int userId);   
+        Task<List<Order>> GetOrdersByUserIdAsync(int userId);
+
+        Task<Order> GetOrderWithUserAsync(int orderId);
+
+        Task<Order?> GetOrderByPayOSOrderCodeAsync(int payOSOrderCode);
     }
 }

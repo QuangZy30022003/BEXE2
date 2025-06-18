@@ -157,6 +157,7 @@ D:\myself\BE\JucieAndFlower\JucieAndFlower\bin\Debug\net8.0\Microsoft.Bcl.Memory
 D:\myself\BE\JucieAndFlower\JucieAndFlower\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\appsettings.Development.json
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\appsettings.json
+D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\libman.json
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\JucieAndFlower.staticwebassets.endpoints.json
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\JucieAndFlower.exe
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\JucieAndFlower.deps.json
@@ -201,6 +202,8 @@ D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Microsoft.Open
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\payos-lib-backend-dotnet.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

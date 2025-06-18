@@ -44,12 +44,14 @@ builder.Services.AddCors(options =>
                   .AllowAnyMethod();
         });
 });
+builder.Services.AddHttpClient("PayOS", client =>
+{
+    client.BaseAddress = new Uri("https://api-merchant.payos.vn/v2/");
+});
+builder.Services.Configure<PayOSConfig>(builder.Configuration.GetSection("PayOS"));
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
     {
-        //x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-        //x.JsonSerializerOptions.WriteIndented = true;
-
         x.JsonSerializerOptions.WriteIndented = true;
         x.JsonSerializerOptions.PropertyNamingPolicy = null;
     });
@@ -106,7 +108,7 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "JuiceAndFlower.API v1");
 });
-app.UseCors("AllowFrontend");
+app.UseCors("AllowFrontend");   
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

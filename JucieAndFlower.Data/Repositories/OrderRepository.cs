@@ -43,7 +43,12 @@ namespace JucieAndFlower.Data.Repositories
                 .ToListAsync();
         }
 
-
+        public async Task<Order> GetOrderWithUserAsync(int orderId)
+        {
+            return await _context.Orders
+                .Include(o => o.User)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId);
+        }
         public async Task<List<Order>> GetOrdersByUserIdAsync(int userId)
         {
             return await _context.Orders
@@ -52,6 +57,12 @@ namespace JucieAndFlower.Data.Repositories
                 .ThenInclude(od => od.Product)
                 .OrderByDescending(o => o.OrderDate)
                 .ToListAsync();
+        }
+
+        public async Task<Order?> GetOrderByPayOSOrderCodeAsync(int payOSOrderCode)
+        {
+            return await _context.Orders
+                .FirstOrDefaultAsync(o => o.PayOSOrderCode == payOSOrderCode);
         }
 
     }
