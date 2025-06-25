@@ -31,6 +31,7 @@
                     CategoryId = p.CategoryId ?? 0,
                     IsAvailable = p.IsAvailable ?? true,
                     CreatedAt = p.CreatedAt ?? DateTime.Now,
+                    ImageUrl = p.ImageUrl,
                     Images = p.Images.Select(img => new ProductImageDto
                     {
                         Id = img.Id,
@@ -53,6 +54,7 @@
                     CategoryId = p.CategoryId ?? 0,
                     IsAvailable = p.IsAvailable ?? true,
                     CreatedAt = p.CreatedAt ?? DateTime.Now,
+                    ImageUrl = p.ImageUrl,
                     Images = p.Images.Select(img => new ProductImageDto
                     {
                         Id = img.Id,
