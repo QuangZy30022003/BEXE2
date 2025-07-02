@@ -3,6 +3,7 @@ using JucieAndFlower.Data.Enities.VnPay;
 using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -108,8 +109,14 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "JuiceAndFlower.API v1");
 });
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images")),
+    RequestPath = "/images"
+});
 app.UseCors("AllowFrontend");   
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

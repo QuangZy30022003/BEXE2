@@ -1,5 +1,113 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\033c824d-008d-4afb-b082-31d0ea14a0c7.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/033c824d-008d-4afb-b082-31d0ea14a0c7.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gqlfy8r7yf</Fingerprint>
+      <Integrity>OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\033c824d-008d-4afb-b082-31d0ea14a0c7.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d59e978-c913-420e-98c1-9c7cf44a18e4.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/4d59e978-c913-420e-98c1-9c7cf44a18e4.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gqlfy8r7yf</Fingerprint>
+      <Integrity>OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d59e978-c913-420e-98c1-9c7cf44a18e4.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pcmb3l6qxv</Fingerprint>
+      <Integrity>6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\62081ca9-d8fc-49e5-951a-d618e68f2db6.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/62081ca9-d8fc-49e5-951a-d618e68f2db6.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gqlfy8r7yf</Fingerprint>
+      <Integrity>OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\62081ca9-d8fc-49e5-951a-d618e68f2db6.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/886b669b-3482-4c49-80cf-220d7afa5b3a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pcmb3l6qxv</Fingerprint>
+      <Integrity>6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/b3d96511-0cfd-4255-a384-cef35aa7896e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pcmb3l6qxv</Fingerprint>
+      <Integrity>6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>JucieAndFlower</SourceId>
@@ -17,6 +125,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JucieAndFlower</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JucieAndFlower</BasePath>
+      <RelativePath>images/ec713cd3-a781-4efd-a9db-4b77f0bb8539.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gqlfy8r7yf</Fingerprint>
+      <Integrity>OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
