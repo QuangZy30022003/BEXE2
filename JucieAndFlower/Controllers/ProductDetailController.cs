@@ -31,7 +31,7 @@ namespace JucieAndFlower.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "2")] // Staff
+        [Authorize(Roles = "2,4")] // Staff
         public async Task<IActionResult> Create(ProductDetailCreateDTO dto)
         {
             var result = await _service.AddAsync(dto);
@@ -39,7 +39,7 @@ namespace JucieAndFlower.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "2,4")]
         public async Task<IActionResult> Update(int id, ProductDetailCreateDTO dto)
         {
             var result = await _service.UpdateAsync(id, dto);
@@ -48,7 +48,7 @@ namespace JucieAndFlower.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "2,4")]
         public async Task<IActionResult> Delete(int id)
         {
             var success = await _service.DeleteAsync(id);

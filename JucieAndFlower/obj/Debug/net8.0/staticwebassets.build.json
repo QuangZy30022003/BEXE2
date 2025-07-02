@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fnwbr501VniDIlsQmfxq4FmBYpkz27doySH9JKUGo34=",
+  "Hash": "uU/6WlkiojQVoZhoA6NddauzFn1MLNtrvLdH1UR22qc=",
   "Source": "JucieAndFlower",
   "BasePath": "_content/JucieAndFlower",
   "Mode": "Default",
@@ -16,6 +16,132 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\033c824d-008d-4afb-b082-31d0ea14a0c7.png",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/033c824d-008d-4afb-b082-31d0ea14a0c7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqlfy8r7yf",
+      "Integrity": "OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\033c824d-008d-4afb-b082-31d0ea14a0c7.png"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\4d59e978-c913-420e-98c1-9c7cf44a18e4.png",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/4d59e978-c913-420e-98c1-9c7cf44a18e4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqlfy8r7yf",
+      "Integrity": "OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4d59e978-c913-420e-98c1-9c7cf44a18e4.png"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pcmb3l6qxv",
+      "Integrity": "6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\62081ca9-d8fc-49e5-951a-d618e68f2db6.png",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/62081ca9-d8fc-49e5-951a-d618e68f2db6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqlfy8r7yf",
+      "Integrity": "OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\62081ca9-d8fc-49e5-951a-d618e68f2db6.png"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/886b669b-3482-4c49-80cf-220d7afa5b3a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pcmb3l6qxv",
+      "Integrity": "6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/b3d96511-0cfd-4255-a384-cef35aa7896e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pcmb3l6qxv",
+      "Integrity": "6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg"
+    },
     {
       "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg",
       "SourceId": "JucieAndFlower",
@@ -36,9 +162,522 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg"
+    },
+    {
+      "Identity": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png",
+      "SourceId": "JucieAndFlower",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\",
+      "BasePath": "_content/JucieAndFlower",
+      "RelativePath": "images/ec713cd3-a781-4efd-a9db-4b77f0bb8539#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqlfy8r7yf",
+      "Integrity": "OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "images/033c824d-008d-4afb-b082-31d0ea14a0c7.gqlfy8r7yf.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\033c824d-008d-4afb-b082-31d0ea14a0c7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:46:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqlfy8r7yf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/033c824d-008d-4afb-b082-31d0ea14a0c7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/033c824d-008d-4afb-b082-31d0ea14a0c7.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\033c824d-008d-4afb-b082-31d0ea14a0c7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:46:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d59e978-c913-420e-98c1-9c7cf44a18e4.gqlfy8r7yf.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\4d59e978-c913-420e-98c1-9c7cf44a18e4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:34:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqlfy8r7yf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4d59e978-c913-420e-98c1-9c7cf44a18e4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d59e978-c913-420e-98c1-9c7cf44a18e4.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\4d59e978-c913-420e-98c1-9c7cf44a18e4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:34:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:42:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
+    {
+      "Route": "images/577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.pcmb3l6qxv.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:42:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pcmb3l6qxv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/577b5d28-9c68-43b0-a66d-f9a7e9f5fd2d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
+    {
+      "Route": "images/62081ca9-d8fc-49e5-951a-d618e68f2db6.gqlfy8r7yf.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\62081ca9-d8fc-49e5-951a-d618e68f2db6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqlfy8r7yf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/62081ca9-d8fc-49e5-951a-d618e68f2db6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/62081ca9-d8fc-49e5-951a-d618e68f2db6.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\62081ca9-d8fc-49e5-951a-d618e68f2db6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/886b669b-3482-4c49-80cf-220d7afa5b3a.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
+    {
+      "Route": "images/886b669b-3482-4c49-80cf-220d7afa5b3a.pcmb3l6qxv.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\886b669b-3482-4c49-80cf-220d7afa5b3a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pcmb3l6qxv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/886b669b-3482-4c49-80cf-220d7afa5b3a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
+    {
+      "Route": "images/b3d96511-0cfd-4255-a384-cef35aa7896e.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:40:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
+    {
+      "Route": "images/b3d96511-0cfd-4255-a384-cef35aa7896e.pcmb3l6qxv.jpg",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\b3d96511-0cfd-4255-a384-cef35aa7896e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:40:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pcmb3l6qxv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/b3d96511-0cfd-4255-a384-cef35aa7896e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6Xw+44ARexwWgAX0GYAwx3JVKol+yWwGAVBQO+3r+t4="
+        }
+      ]
+    },
     {
       "Route": "images/d9722840-ee84-4325-83dc-40cb0fa007f0.jpg",
       "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\d9722840-ee84-4325-83dc-40cb0fa007f0.jpg",
@@ -118,6 +757,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qy6vetEYfIPwFnjJvql/AIpP7Gedgl9k6rCqJqKtaMw="
+        }
+      ]
+    },
+    {
+      "Route": "images/ec713cd3-a781-4efd-a9db-4b77f0bb8539.gqlfy8r7yf.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqlfy8r7yf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ec713cd3-a781-4efd-a9db-4b77f0bb8539.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/ec713cd3-a781-4efd-a9db-4b77f0bb8539.png",
+      "AssetFile": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\wwwroot\\images\\ec713cd3-a781-4efd-a9db-4b77f0bb8539.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 03:53:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPL/icDnqm6GXxUVedWUxocSxuWWwHQiSf3xXR7lN9s="
         }
       ]
     }
