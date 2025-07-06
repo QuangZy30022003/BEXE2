@@ -32,6 +32,7 @@ namespace JucieAndFlower.Service
             service.AddScoped<IFlowerComponentService, FlowerComponentService>();
             service.AddScoped<IPayOSService, PayOSService>();
             service.AddScoped<IProductImageService, ProductImageService>();
+            service.AddScoped<ICloudinaryService, CloudinaryService>();
             return service;
         }
     }

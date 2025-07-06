@@ -317,3 +317,4 @@ D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\obj\Debug\net8.0\JucieAndFlower
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\obj\Debug\net8.0\JucieAndFlower.genruntimeconfig.cache
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\obj\Debug\net8.0\ref\JucieAndFlower.dll
 D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\JucieAndFlower.staticwebassets.runtime.json
+D:\myself\BE\JucieAndFlower\BEXE2\JucieAndFlower\bin\Debug\net8.0\CloudinaryDotNet.dll
