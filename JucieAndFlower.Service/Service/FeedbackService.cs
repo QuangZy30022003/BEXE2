@@ -19,14 +19,40 @@ namespace JucieAndFlower.Service.Service
             _repository = repository;
         }
 
-        public async Task<IEnumerable<Feedback>> GetAllAsync()
+        public async Task<IEnumerable<FeedbackDto>> GetAllAsync()
         {
-            return await _repository.GetAllAsync();
+            var feedbacks = await _repository.GetAllAsync();
+            return feedbacks.Select(f => new FeedbackDto
+            {
+                FeedbackId = f.FeedbackId,
+                Rating = f.Rating ?? 0,
+                Comment = f.Comment,
+                CreatedAt = f.CreatedAt,
+                UserId = f.UserId,
+                UserFullName = f.User?.FullName ?? "Unknown",
+                ProductId = f.ProductId,
+                WorkshopId = f.WorkshopId,
+                WorkshopName = f.Workshop?.Title ?? "Unknown",
+            });
         }
 
-        public async Task<Feedback?> GetByIdAsync(int id)
+        public async Task<FeedbackDto?> GetByIdAsync(int id)
         {
-            return await _repository.GetByIdAsync(id);
+            var f = await _repository.GetByIdAsync(id);
+            if (f == null) return null;
+
+            return new FeedbackDto
+            {
+                FeedbackId = f.FeedbackId,
+                Rating = f.Rating ?? 0,
+                Comment = f.Comment,
+                CreatedAt = f.CreatedAt,
+                UserId = f.UserId,
+                UserFullName = f.User?.FullName ?? "Unknown",
+                ProductId = f.ProductId,
+                WorkshopId = f.WorkshopId,
+                WorkshopName = f.Workshop?.Title ?? "Unknown",
+            };
         }
 
         public async Task<Feedback> CreateAsync(int userId, FeedbackCreateDto dto)

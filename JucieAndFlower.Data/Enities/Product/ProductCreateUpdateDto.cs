@@ -14,6 +14,8 @@ namespace JucieAndFlower.Data.Enities.Product
         public string? ImageUrl { get; set; }
         public int CategoryId { get; set; }
         public bool IsAvailable { get; set; }
+
+        public bool OnTop { get; set; }
     }
 
 }

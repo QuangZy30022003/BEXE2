@@ -1798,6 +1798,9 @@
           },
           "IsAvailable": {
             "type": "boolean"
+          },
+          "OnTop": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

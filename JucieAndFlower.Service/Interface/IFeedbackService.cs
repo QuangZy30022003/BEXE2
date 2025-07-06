@@ -10,8 +10,8 @@ namespace JucieAndFlower.Service.Interface
 {
     public interface IFeedbackService
     {
-        Task<IEnumerable<Feedback>> GetAllAsync();
-        Task<Feedback?> GetByIdAsync(int id);
+        Task<IEnumerable<FeedbackDto>> GetAllAsync();
+        Task<FeedbackDto?> GetByIdAsync(int id);
         Task<Feedback> CreateAsync(int userId, FeedbackCreateDto dto);
         Task<bool> UpdateAsync(int id, FeedbackUpdateDto dto);
         Task<bool> DeleteAsync(int id);

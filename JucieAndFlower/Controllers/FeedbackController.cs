@@ -52,16 +52,40 @@ namespace JucieAndFlower.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] FeedbackUpdateDto dto)
         {
-            var result = await _feedbackService.UpdateAsync(id, dto);
-            if (!result) return NotFound();
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
+            // 2. Lấy feedback hiện tại
+            var existing = await _feedbackService.GetByIdAsync(id);
+            if (existing == null)
+                return NotFound();
+
+            // 3. Kiểm tra quyền: chỉ chủ feedback mới được update
+            if (existing.UserId != userId)
+                return Forbid();    // 403
+
+            // 4. Thực hiện update
+            var success = await _feedbackService.UpdateAsync(id, dto);
+            if (!success)
+                return StatusCode(500, "Update failed");
+
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _feedbackService.DeleteAsync(id);
-            if (!result) return NotFound();
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var existing = await _feedbackService.GetByIdAsync(id);
+            if (existing == null)
+                return NotFound();
+
+            if (existing.UserId != userId)
+                return Forbid();
+
+            var success = await _feedbackService.DeleteAsync(id);
+            if (!success)
+                return StatusCode(500, "Delete failed");
+
             return NoContent();
         }
     }
