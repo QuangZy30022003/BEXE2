@@ -1,4 +1,5 @@
 ﻿using JucieAndFlower.Data;
+using JucieAndFlower.Data.Enities.Cloudy;
 using JucieAndFlower.Data.Enities.VnPay;
 using JucieAndFlower.Data.Models;
 using JucieAndFlower.Service;
@@ -95,7 +96,8 @@ builder.Services.AddSingleton(sp =>
     var config = sp.GetRequiredService<IConfiguration>();
     return config.GetSection("VnPayConfig").Get<VnPayConfig>();
 });
-
+builder.Services.Configure<CloudinarySettings>(
+    builder.Configuration.GetSection("CloudinarySettings"));    
 builder.Services
              .AddRepository()
              .AddServices();
