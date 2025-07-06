@@ -30,7 +30,7 @@ public partial class Product
 
     [Column(TypeName = "datetime")]
     public DateTime? CreatedAt { get; set; }
-
+    public bool OnTop { get; set; }
     [ForeignKey("CategoryId")]
     [InverseProperty("Products")]
     public virtual Category? Category { get; set; }
