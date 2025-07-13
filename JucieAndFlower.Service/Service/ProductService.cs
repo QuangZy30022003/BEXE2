@@ -32,6 +32,7 @@ namespace JucieAndFlower.Service.Service
     Price = p.Price ?? 0,
     CategoryId = p.CategoryId ?? 0,
     IsAvailable = p.IsAvailable ?? true,
+    OnTop = p.OnTop,
     CreatedAt = p.CreatedAt ?? DateTime.Now,
     ImageUrl = p.ImageUrl,
     Images = p.Images.Select(img => new ProductImageDto
@@ -55,6 +56,7 @@ namespace JucieAndFlower.Service.Service
                 Price = p.Price ?? 0,
                 CategoryId = p.CategoryId ?? 0,
                 IsAvailable = p.IsAvailable ?? true,
+                OnTop = p.OnTop,
                 CreatedAt = p.CreatedAt ?? DateTime.Now,
                 ImageUrl = p.ImageUrl,
                 Images = p.Images.Select(img => new ProductImageDto
@@ -111,18 +113,27 @@ namespace JucieAndFlower.Service.Service
         public async Task<List<ProductDto>> GetByCategoryIdAsync(int categoryId)
         {
             var products = await _repo.GetByCategoryIdAsync(categoryId);
-            return products.Select(p => new ProductDto
-            {
-                ProductId = p.ProductId,
-                Name = p.Name,
-                Description = p.Description,
-                Price = p.Price ?? 0,
-                ImageUrl = p.ImageUrl,
-                CategoryId = p.CategoryId ?? 0,
-                IsAvailable = p.IsAvailable ?? true,
-                CreatedAt = p.CreatedAt ?? DateTime.Now
-            }).ToList();
-        }
+            return products
+                .OrderByDescending(p => p.OnTop)
+                .ThenByDescending(p => p.CreatedAt)
+                .Select(p => new ProductDto
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    Price = p.Price ?? 0,
+                    CategoryId = p.CategoryId ?? 0,
+                    IsAvailable = p.IsAvailable ?? true,
+                    OnTop = p.OnTop,
+                    CreatedAt = p.CreatedAt ?? DateTime.Now,
+                    ImageUrl = p.ImageUrl,
+                    Images = p.Images.Select(img => new ProductImageDto
+                    {
+                        Id = img.Id,
+                        ImageUrl = img.ImageUrl
+                    }).ToList()
+                }).ToList();
+        }   
 
     }
 }
