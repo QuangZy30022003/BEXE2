@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace JucieAndFlower.Data.Models;
 
@@ -27,5 +28,6 @@ public partial class Payment
 
     [ForeignKey("OrderId")]
     [InverseProperty("Payments")]
+    [JsonIgnore]
     public virtual Order? Order { get; set; }
 }
