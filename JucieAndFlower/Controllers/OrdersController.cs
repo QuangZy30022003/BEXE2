@@ -70,6 +70,61 @@ namespace JucieAndFlower.Controllers
             }
         }
 
+        //[HttpGet("payment-return")]
+        //[AllowAnonymous]
+        //public async Task<IActionResult> PaymentReturn()
+        //{
+        //    try
+        //    {
+        //        var response = _payOSService.GetReturnData(Request.Query);
+
+        //        // ✅ Tìm đơn hàng theo PayOSOrderCode chứ không phải OrderId
+        //        var order = await _orderService.GetOrderByPayOSOrderCodeAsync(response.PayOSOrderCode);
+        //        if (order == null)
+        //            if (order == null)
+        //        {
+        //            return Redirect($"http://localhost:5173/payment-result?success=false&message=Order not found&orderId=0");
+        //        }
+
+        //        // Tránh tạo nhiều Payment nếu reload
+        //        var existingPayment = await _paymentService.GetPaymentByOrderIdAsync(order.OrderId);
+        //        if (existingPayment == null)
+        //        {
+        //            var payment = new Payment
+        //            {
+        //                OrderId = order.OrderId,
+        //                PaymentMethod = "PayOS",
+        //                PaidAmount = order.FinalAmount,
+        //                PaymentDate = DateTime.Now,
+        //                Status = response.Success ? "Paid" : "Cancel"
+        //            };
+        //            await _paymentService.AddPaymentAsync(payment);
+        //        }
+
+        //        // Cập nhật trạng thái đơn hàng
+        //        if (order.Status == "Pending")
+        //        {
+        //            if (response.Success)
+        //            {
+        //                await _orderService.MarkOrderAsCompleteAsync(order.OrderId);
+        //                return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&amount={order.FinalAmount}&message=Payment successful");
+        //            }
+        //            else
+        //            {
+        //                await _orderService.MarkOrderAsCanceledAsync(order.OrderId);
+        //                return Redirect($"http://localhost:5173/payment-result?success=false&orderId={order.OrderId}&message=Payment failed or canceled");
+        //            }
+        //        }
+
+        //        // Nếu đơn hàng đã xử lý rồi
+        //        return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&message=Order already processed");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error in PaymentReturn: {ex.Message}");
+        //        return Redirect("http://localhost:5173/payment-result?success=false&message=Payment processing error");
+        //    }
+        //}
         [HttpGet("payment-return")]
         [AllowAnonymous]
         public async Task<IActionResult> PaymentReturn()
@@ -78,11 +133,15 @@ namespace JucieAndFlower.Controllers
             {
                 var response = _payOSService.GetReturnData(Request.Query);
 
-                // ✅ Tìm đơn hàng theo PayOSOrderCode chứ không phải OrderId
+                // Tìm đơn hàng theo PayOSOrderCode
                 var order = await _orderService.GetOrderByPayOSOrderCodeAsync(response.PayOSOrderCode);
+                // Lấy returnUrl từ query (nếu có)
+                var returnUrl = Request.Query["returnUrl"].ToString();
+
                 if (order == null)
-                    if (order == null)
                 {
+                    if (!string.IsNullOrEmpty(returnUrl))
+                        return Redirect($"{returnUrl}?success=false&message=Order not found&orderId=0");
                     return Redirect($"http://localhost:5173/payment-result?success=false&message=Order not found&orderId=0");
                 }
 
@@ -107,25 +166,32 @@ namespace JucieAndFlower.Controllers
                     if (response.Success)
                     {
                         await _orderService.MarkOrderAsCompleteAsync(order.OrderId);
+                        if (!string.IsNullOrEmpty(returnUrl))
+                            return Redirect($"{returnUrl}?success=true&orderId={order.OrderId}&amount={order.FinalAmount}&message=Payment successful");
                         return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&amount={order.FinalAmount}&message=Payment successful");
                     }
                     else
                     {
                         await _orderService.MarkOrderAsCanceledAsync(order.OrderId);
+                        if (!string.IsNullOrEmpty(returnUrl))
+                            return Redirect($"{returnUrl}?success=false&orderId={order.OrderId}&message=Payment failed or canceled");
                         return Redirect($"http://localhost:5173/payment-result?success=false&orderId={order.OrderId}&message=Payment failed or canceled");
                     }
                 }
 
                 // Nếu đơn hàng đã xử lý rồi
+                if (!string.IsNullOrEmpty(returnUrl))
+                    return Redirect($"{returnUrl}?success=true&orderId={order.OrderId}&message=Order already processed");
                 return Redirect($"http://localhost:5173/payment-result?success=true&orderId={order.OrderId}&message=Order already processed");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in PaymentReturn: {ex.Message}");
+                var returnUrl = Request.Query["returnUrl"].ToString();
+                if (!string.IsNullOrEmpty(returnUrl))
+                    return Redirect($"{returnUrl}?success=false&message=Payment processing error");
                 return Redirect("http://localhost:5173/payment-result?success=false&message=Payment processing error");
             }
         }
-
 
 
         [HttpPost("from-cart")]
@@ -145,9 +211,12 @@ namespace JucieAndFlower.Controllers
             return Ok(new
             {
                 order.OrderId,
-                PaymentUrl = paymentUrl
+                PaymentUrl = paymentUrl,
+                 PayOSOrderCode = order.PayOSOrderCode
             });
         }
+
+
 
 
     }
