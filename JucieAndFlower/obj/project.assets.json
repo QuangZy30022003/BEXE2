@@ -7602,11 +7602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\JucieAndFlower.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Downloads\\BEXE2\\JucieAndFlower\\JucieAndFlower.csproj",
       "projectName": "JucieAndFlower",
-      "projectPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\JucieAndFlower.csproj",
+      "projectPath": "C:\\Users\\ACER\\Downloads\\BEXE2\\JucieAndFlower\\JucieAndFlower.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\Downloads\\BEXE2\\JucieAndFlower\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7628,8 +7628,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\JucieAndFlower.Service.csproj": {
-              "projectPath": "D:\\myself\\BE\\JucieAndFlower\\BEXE2\\JucieAndFlower.Service\\JucieAndFlower.Service.csproj"
+            "C:\\Users\\ACER\\Downloads\\BEXE2\\JucieAndFlower.Service\\JucieAndFlower.Service.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Downloads\\BEXE2\\JucieAndFlower.Service\\JucieAndFlower.Service.csproj"
             }
           }
         }
